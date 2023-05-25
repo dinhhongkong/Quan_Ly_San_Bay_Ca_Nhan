@@ -9,6 +9,15 @@ using System.Windows.Forms;
 
 namespace Quan_Ly_May_Bay
 {
+    public enum TrangThai
+    {
+        NONE,
+        THEM,
+        HIEUCHINH,
+        XOA,
+        CHITIET
+    }
+
     internal static class Program
     {
         public static FormMain frmMain;

@@ -100,3 +100,20 @@ C:\Users\KongDinh\Documents\Project\Winform\Quan_Ly_San_Bay_Ca_Nhan\Quan Ly San 
 C:\Users\KongDinh\Documents\Project\Winform\Quan_Ly_San_Bay_Ca_Nhan\Quan Ly San Bay Ca Nhan\obj\Debug\Quan Ly San Bay Ca Nhan.csproj.CopyComplete
 C:\Users\KongDinh\Documents\Project\Winform\Quan_Ly_San_Bay_Ca_Nhan\Quan Ly San Bay Ca Nhan\obj\Debug\Quan Ly May Bay.exe
 C:\Users\KongDinh\Documents\Project\Winform\Quan_Ly_San_Bay_Ca_Nhan\Quan Ly San Bay Ca Nhan\obj\Debug\Quan Ly May Bay.pdb
+C:\Users\KongDinh\Documents\Project\Winform\Quan_Ly_San_Bay_Ca_Nhan\Quan Ly San Bay Ca Nhan\bin\Debug\DevExpress.XtraGrid.v22.2.dll
+C:\Users\KongDinh\Documents\Project\Winform\Quan_Ly_San_Bay_Ca_Nhan\Quan Ly San Bay Ca Nhan\bin\Debug\DevExpress.XtraLayout.v22.2.dll
+C:\Users\KongDinh\Documents\Project\Winform\Quan_Ly_San_Bay_Ca_Nhan\Quan Ly San Bay Ca Nhan\bin\Debug\DevExpress.XtraPrinting.v22.2.dll
+C:\Users\KongDinh\Documents\Project\Winform\Quan_Ly_San_Bay_Ca_Nhan\Quan Ly San Bay Ca Nhan\bin\Debug\DevExpress.RichEdit.v22.2.Core.dll
+C:\Users\KongDinh\Documents\Project\Winform\Quan_Ly_San_Bay_Ca_Nhan\Quan Ly San Bay Ca Nhan\bin\Debug\DevExpress.XtraTreeList.v22.2.dll
+C:\Users\KongDinh\Documents\Project\Winform\Quan_Ly_San_Bay_Ca_Nhan\Quan Ly San Bay Ca Nhan\bin\Debug\DevExpress.Office.v22.2.Core.dll
+C:\Users\KongDinh\Documents\Project\Winform\Quan_Ly_San_Bay_Ca_Nhan\Quan Ly San Bay Ca Nhan\bin\Debug\DevExpress.XtraGrid.v22.2.xml
+C:\Users\KongDinh\Documents\Project\Winform\Quan_Ly_San_Bay_Ca_Nhan\Quan Ly San Bay Ca Nhan\bin\Debug\DevExpress.XtraLayout.v22.2.xml
+C:\Users\KongDinh\Documents\Project\Winform\Quan_Ly_San_Bay_Ca_Nhan\Quan Ly San Bay Ca Nhan\bin\Debug\DevExpress.XtraPrinting.v22.2.xml
+C:\Users\KongDinh\Documents\Project\Winform\Quan_Ly_San_Bay_Ca_Nhan\Quan Ly San Bay Ca Nhan\bin\Debug\DevExpress.RichEdit.v22.2.Core.xml
+C:\Users\KongDinh\Documents\Project\Winform\Quan_Ly_San_Bay_Ca_Nhan\Quan Ly San Bay Ca Nhan\bin\Debug\DevExpress.XtraTreeList.v22.2.xml
+C:\Users\KongDinh\Documents\Project\Winform\Quan_Ly_San_Bay_Ca_Nhan\Quan Ly San Bay Ca Nhan\bin\Debug\DevExpress.Office.v22.2.Core.xml
+C:\Users\KongDinh\Documents\Project\Winform\Quan_Ly_San_Bay_Ca_Nhan\Quan Ly San Bay Ca Nhan\obj\Debug\Quan_Ly_May_Bay.FormMayBay.resources
+C:\Users\KongDinh\Documents\Project\Winform\Quan_Ly_San_Bay_Ca_Nhan\Quan Ly San Bay Ca Nhan\obj\Debug\Quan_Ly_May_Bay.SubForm.FormChonLoaiMB.resources
+C:\Users\KongDinh\Documents\Project\Winform\Quan_Ly_San_Bay_Ca_Nhan\Quan Ly San Bay Ca Nhan\obj\Debug\Quan_Ly_May_Bay.FormLoaiMayBay.resources
+C:\Users\KongDinh\Documents\Project\Winform\Quan_Ly_San_Bay_Ca_Nhan\Quan Ly San Bay Ca Nhan\obj\Debug\Quan_Ly_May_Bay.FormKho.resources
+C:\Users\KongDinh\Documents\Project\Winform\Quan_Ly_San_Bay_Ca_Nhan\Quan Ly San Bay Ca Nhan\obj\Debug\Quan_Ly_May_Bay.SubForm.FormChonMayBay.resources

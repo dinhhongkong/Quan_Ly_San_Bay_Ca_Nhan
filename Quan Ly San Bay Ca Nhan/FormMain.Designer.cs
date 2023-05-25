@@ -129,6 +129,7 @@
             this.btnMayBay.ImageOptions.Image = global::Quan_Ly_May_Bay.Properties.Resources.airplane_192px;
             this.btnMayBay.Name = "btnMayBay";
             this.btnMayBay.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnMayBay.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnMayBay_ItemClick);
             // 
             // btnLoaiMB
             // 
@@ -137,6 +138,7 @@
             this.btnLoaiMB.ImageOptions.Image = global::Quan_Ly_May_Bay.Properties.Resources.jet_engine_480px;
             this.btnLoaiMB.Name = "btnLoaiMB";
             this.btnLoaiMB.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnLoaiMB.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLoaiMB_ItemClick);
             // 
             // btnCaNhan
             // 
@@ -153,6 +155,7 @@
             this.btnKho.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnKho.ImageOptions.Image")));
             this.btnKho.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnKho.ImageOptions.LargeImage")));
             this.btnKho.Name = "btnKho";
+            this.btnKho.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnKho_ItemClick);
             // 
             // btnNhanVien
             // 

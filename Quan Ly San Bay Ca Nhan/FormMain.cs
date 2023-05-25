@@ -75,5 +75,41 @@ namespace Quan_Ly_May_Bay
             btnDangXuat.Enabled = false;
             btnTaoTk.Enabled = false;
         }
+
+        private void btnMayBay_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = this.CheckExists(typeof(FormMayBay));
+            if (frm != null) frm.Activate();
+            else
+            {
+                FormMayBay frmMayBay = new FormMayBay();
+                frmMayBay.MdiParent = this;
+                frmMayBay.Show();
+            }
+        }
+
+        private void btnLoaiMB_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = this.CheckExists(typeof(FormLoaiMayBay));
+            if (frm != null) frm.Activate();
+            else
+            {
+                FormLoaiMayBay frmLoaiMayBay = new FormLoaiMayBay();
+                frmLoaiMayBay.MdiParent = this;
+                frmLoaiMayBay.Show();
+            }
+        }
+
+        private void btnKho_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = this.CheckExists(typeof(FormKho));
+            if (frm != null) frm.Activate();
+            else
+            {
+                FormKho frmKho = new FormKho();
+                frmKho.MdiParent = this;
+                frmKho.Show();
+            }
+        }
     }
 }
