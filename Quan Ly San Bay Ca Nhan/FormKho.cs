@@ -226,6 +226,7 @@ namespace Quan_Ly_May_Bay
             bdsCTKho.AddNew();
             gcChucNangCT.Enabled = true;
             gcChucNangCT.Text = "Thêm chi tiết kho";
+            gcCTKho.Enabled = false;
             
         }
 
@@ -233,11 +234,13 @@ namespace Quan_Ly_May_Bay
         {
             gcChucNangCT.Enabled = true;
             gcChucNangCT.Text = "Hiệu chỉnh chi tiết kho";
+            gcCTKho.Enabled = false;
         }
 
         private void btnThoatCT_Click(object sender, EventArgs e)
         {
             gcChucNangCT.Enabled = false;
+            gcCTKho.Enabled = true;
             gcChucNangCT.Text = "Nhập liệu chi tiết kho";
             this.cT_KHOTableAdapter.Fill(this.ds.CT_KHO);
         }
@@ -271,7 +274,6 @@ namespace Quan_Ly_May_Bay
                 MessageBox.Show("ID Máy bay không được bỏ trống, vui lòng chọn 1 ID Máy bay", "Thông báo", MessageBoxButtons.OK);
                 return;
             }
-
 
             try
             {

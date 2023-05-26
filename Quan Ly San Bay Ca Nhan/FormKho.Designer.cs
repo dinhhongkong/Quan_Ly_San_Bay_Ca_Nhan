@@ -78,7 +78,7 @@
             this.btnThoatCT = new DevExpress.XtraEditors.SimpleButton();
             this.btnGhiCTKho = new DevExpress.XtraEditors.SimpleButton();
             this.txtIDMayBay = new DevExpress.XtraEditors.ButtonEdit();
-            this.iDKHOTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.txtIDKhoCT = new DevExpress.XtraEditors.TextEdit();
             iDKHOLabel = new System.Windows.Forms.Label();
             sUCCHUALabel = new System.Windows.Forms.Label();
             vITRILabel = new System.Windows.Forms.Label();
@@ -101,7 +101,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gcChucNangCT)).BeginInit();
             this.gcChucNangCT.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtIDMayBay.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iDKHOTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtIDKhoCT.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // iDKHOLabel
@@ -529,7 +529,7 @@
             this.tsmiXoa,
             this.tsmiReload});
             this.cmsCTKho.Name = "cmsCTKho";
-            this.cmsCTKho.Size = new System.Drawing.Size(203, 100);
+            this.cmsCTKho.Size = new System.Drawing.Size(226, 100);
             // 
             // tsmiThem
             // 
@@ -541,8 +541,8 @@
             // tsmiSua
             // 
             this.tsmiSua.Name = "tsmiSua";
-            this.tsmiSua.Size = new System.Drawing.Size(202, 24);
-            this.tsmiSua.Text = "Sửa chi tiết kho";
+            this.tsmiSua.Size = new System.Drawing.Size(225, 24);
+            this.tsmiSua.Text = "Hiệu chỉnh chi tiết kho";
             this.tsmiSua.Click += new System.EventHandler(this.tsmiSua_Click);
             // 
             // tsmiXoa
@@ -561,12 +561,12 @@
             // 
             // gcChucNangCT
             // 
+            this.gcChucNangCT.Controls.Add(this.txtIDKhoCT);
             this.gcChucNangCT.Controls.Add(this.btnThoatCT);
             this.gcChucNangCT.Controls.Add(this.btnGhiCTKho);
             this.gcChucNangCT.Controls.Add(iDMAYBAYLabel);
             this.gcChucNangCT.Controls.Add(this.txtIDMayBay);
             this.gcChucNangCT.Controls.Add(iDKHOLabel1);
-            this.gcChucNangCT.Controls.Add(this.iDKHOTextEdit);
             this.gcChucNangCT.Dock = System.Windows.Forms.DockStyle.Left;
             this.gcChucNangCT.Enabled = false;
             this.gcChucNangCT.Location = new System.Drawing.Point(575, 418);
@@ -613,17 +613,17 @@
             this.txtIDMayBay.TabIndex = 3;
             this.txtIDMayBay.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.txtIDMayBay_ButtonClick);
             // 
-            // iDKHOTextEdit
+            // txtIDKhoCT
             // 
-            this.iDKHOTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bdsCTKho, "IDKHO", true));
-            this.iDKHOTextEdit.Enabled = false;
-            this.iDKHOTextEdit.Location = new System.Drawing.Point(177, 74);
-            this.iDKHOTextEdit.MenuManager = this.barManager1;
-            this.iDKHOTextEdit.Name = "iDKHOTextEdit";
-            this.iDKHOTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iDKHOTextEdit.Properties.Appearance.Options.UseFont = true;
-            this.iDKHOTextEdit.Size = new System.Drawing.Size(170, 30);
-            this.iDKHOTextEdit.TabIndex = 1;
+            this.txtIDKhoCT.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bdsKho, "IDKHO", true));
+            this.txtIDKhoCT.Location = new System.Drawing.Point(177, 74);
+            this.txtIDKhoCT.MenuManager = this.barManager1;
+            this.txtIDKhoCT.Name = "txtIDKhoCT";
+            this.txtIDKhoCT.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIDKhoCT.Properties.Appearance.Options.UseFont = true;
+            this.txtIDKhoCT.Properties.ReadOnly = true;
+            this.txtIDKhoCT.Size = new System.Drawing.Size(170, 30);
+            this.txtIDKhoCT.TabIndex = 6;
             // 
             // FormKho
             // 
@@ -660,7 +660,7 @@
             this.gcChucNangCT.ResumeLayout(false);
             this.gcChucNangCT.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtIDMayBay.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iDKHOTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtIDKhoCT.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -708,9 +708,9 @@
         private System.Windows.Forms.ToolStripMenuItem tsmiXoa;
         private DevExpress.XtraEditors.GroupControl gcChucNangCT;
         private DevExpress.XtraEditors.ButtonEdit txtIDMayBay;
-        private DevExpress.XtraEditors.TextEdit iDKHOTextEdit;
         private DevExpress.XtraEditors.SimpleButton btnGhiCTKho;
         private System.Windows.Forms.ToolStripMenuItem tsmiReload;
         private DevExpress.XtraEditors.SimpleButton btnThoatCT;
+        private DevExpress.XtraEditors.TextEdit txtIDKhoCT;
     }
 }
