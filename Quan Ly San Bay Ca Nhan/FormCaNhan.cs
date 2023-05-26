@@ -1,5 +1,6 @@
 ﻿using DevExpress.XtraEditors;
 using Quan_Ly_May_Bay.DSTableAdapters;
+using Quan_Ly_May_Bay.SubForm;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -311,9 +312,19 @@ namespace Quan_Ly_May_Bay
         private void btnThemMayBay_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             FormChonMayBay frmChonMayBay = new FormChonMayBay();
-            frmChonMayBay.ShowDialog();
+            String maMayBay = "";
+            if (frmChonMayBay.ShowDialog() == DialogResult.OK)
+            {
+                maMayBay = frmChonMayBay.getIDMayBay();
+            }
+            else
+            {
+                return;
+            }
+
             String maCaNhan = ((DataRowView)bdsCANHAN[bdsCANHAN.Position])["OWNER_ID"].ToString();
-            String maMayBay = frmChonMayBay.getMaMayBay();
+            
+            
             if(maMayBay != "")
             {
                 try

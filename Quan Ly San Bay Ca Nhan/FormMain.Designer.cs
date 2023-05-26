@@ -147,6 +147,7 @@
             this.btnCaNhan.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCaNhan.ImageOptions.Image")));
             this.btnCaNhan.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnCaNhan.ImageOptions.LargeImage")));
             this.btnCaNhan.Name = "btnCaNhan";
+            this.btnCaNhan.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnCaNhan_ItemClick);
             // 
             // btnKho
             // 

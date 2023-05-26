@@ -111,5 +111,17 @@ namespace Quan_Ly_May_Bay
                 frmKho.Show();
             }
         }
+
+        private void btnCaNhan_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = this.CheckExists(typeof(FormCaNhan));
+            if (frm != null) frm.Activate();
+            else
+            {
+                FormCaNhan formCaNhan = new FormCaNhan();
+                formCaNhan.MdiParent = this;
+                formCaNhan.Show();
+            }
+        }
     }
 }
