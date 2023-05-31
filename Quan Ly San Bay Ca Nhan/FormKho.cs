@@ -191,10 +191,7 @@ namespace Quan_Ly_May_Bay
                 gcChucNangCT.Visible = false;
                 gcCTKho.Enabled = false;
             }
-            else
-            {
-                this.Dispose();
-            }
+            
             gcKho.Enabled = true;
             gcChucNang.Enabled = false;
             btnThem.Enabled = true;

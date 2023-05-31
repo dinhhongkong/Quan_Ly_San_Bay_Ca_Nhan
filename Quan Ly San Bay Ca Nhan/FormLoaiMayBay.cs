@@ -181,10 +181,7 @@ namespace Quan_Ly_May_Bay
             {
                 bdsLoaiMB.CancelEdit();
             }
-            else
-            {
-                this.Dispose();
-            }
+            
             gcLoaiMB.Enabled = true;
             gcChucNang.Enabled = false;
             btnThem.Enabled = true;

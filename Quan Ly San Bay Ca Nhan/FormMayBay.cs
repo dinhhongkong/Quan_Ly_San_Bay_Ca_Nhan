@@ -179,10 +179,6 @@ namespace Quan_Ly_May_Bay
             {
                 bdsMayBay.CancelEdit();
             }
-            else
-            {
-                this.Dispose();
-            }
             gcMayBay.Enabled = true;
             pcChucNang.Enabled = false;
             btnThem.Enabled = true;
