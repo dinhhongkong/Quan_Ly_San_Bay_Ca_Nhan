@@ -41,9 +41,9 @@
     <Reference Include="DevExpress.Sparkline.v22.2.Core" />
     <Reference Include="DevExpress.XtraEditors.v22.2" />
     <Reference Include="DevExpress.Drawing.v22.2" />
-    <Reference Include="DevExpress.XtraGrid.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraLayout.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraPrinting.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v22.2, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v22.2, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v22.2, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -75,6 +75,12 @@
     </Compile>
     <Compile Include="FormDangNhap.Designer.cs">
       <DependentUpon>FormDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDoanhNghiep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDoanhNghiep.Designer.cs">
+      <DependentUpon>FormDoanhNghiep.cs</DependentUpon>
     </Compile>
     <Compile Include="FormKho.cs">
       <SubType>Form</SubType>
@@ -114,11 +120,20 @@
     <Compile Include="SubForm\FormChonMayBay.Designer.cs">
       <DependentUpon>FormChonMayBay.cs</DependentUpon>
     </Compile>
+    <Compile Include="SubForm\FormLocMayBaySoHuu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\FormLocMayBaySoHuu.Designer.cs">
+      <DependentUpon>FormLocMayBaySoHuu.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormCaNhan.resx">
       <DependentUpon>FormCaNhan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormDangNhap.resx">
       <DependentUpon>FormDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDoanhNghiep.resx">
+      <DependentUpon>FormDoanhNghiep.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormKho.resx">
       <DependentUpon>FormKho.cs</DependentUpon>
@@ -148,6 +163,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SubForm\FormChonMayBay.resx">
       <DependentUpon>FormChonMayBay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\FormLocMayBaySoHuu.resx">
+      <DependentUpon>FormLocMayBaySoHuu.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
     <None Include="DS.xsc">
