@@ -191,6 +191,7 @@
             this.btnBaoTri.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnBaoTri.ImageOptions.Image")));
             this.btnBaoTri.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnBaoTri.ImageOptions.LargeImage")));
             this.btnBaoTri.Name = "btnBaoTri";
+            this.btnBaoTri.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnBaoTri_ItemClick);
             // 
             // btnDoanhNghiep
             // 

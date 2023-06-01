@@ -43,6 +43,7 @@ namespace Quan_Ly_May_Bay
             {
                 ribBaoTri.Visible = true;
             }
+            ribBaoTri.Visible = true;
         }
 
         private void btnDangNhap_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -145,6 +146,18 @@ namespace Quan_Ly_May_Bay
                 FormNVBaoTri frmNVBaoTri = new FormNVBaoTri();
                 frmNVBaoTri.MdiParent = this;
                 frmNVBaoTri.Show();
+            }
+        }
+
+        private void btnBaoTri_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = this.CheckExists(typeof(FormPhieuBaoTri));
+            if (frm != null) frm.Activate();
+            else
+            {
+                FormPhieuBaoTri frmPhieuBaoTri = new FormPhieuBaoTri();
+                frmPhieuBaoTri.MdiParent = this;
+                frmPhieuBaoTri.Show();
             }
         }
     }

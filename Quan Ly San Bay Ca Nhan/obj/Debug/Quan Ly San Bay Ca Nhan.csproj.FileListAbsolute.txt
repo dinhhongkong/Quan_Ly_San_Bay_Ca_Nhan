@@ -117,3 +117,9 @@ C:\Users\KongDinh\Documents\Project\Winform\Quan_Ly_San_Bay_Ca_Nhan\Quan Ly San 
 C:\Users\KongDinh\Documents\Project\Winform\Quan_Ly_San_Bay_Ca_Nhan\Quan Ly San Bay Ca Nhan\obj\Debug\Quan_Ly_May_Bay.FormLoaiMayBay.resources
 C:\Users\KongDinh\Documents\Project\Winform\Quan_Ly_San_Bay_Ca_Nhan\Quan Ly San Bay Ca Nhan\obj\Debug\Quan_Ly_May_Bay.FormKho.resources
 C:\Users\KongDinh\Documents\Project\Winform\Quan_Ly_San_Bay_Ca_Nhan\Quan Ly San Bay Ca Nhan\obj\Debug\Quan_Ly_May_Bay.SubForm.FormChonMayBay.resources
+C:\Users\KongDinh\Documents\Project\Winform\Quan_Ly_San_Bay_Ca_Nhan\Quan Ly San Bay Ca Nhan\obj\Debug\Quan_Ly_May_Bay.FormCaNhan.resources
+C:\Users\KongDinh\Documents\Project\Winform\Quan_Ly_San_Bay_Ca_Nhan\Quan Ly San Bay Ca Nhan\obj\Debug\Quan_Ly_May_Bay.FormNhanVien.resources
+C:\Users\KongDinh\Documents\Project\Winform\Quan_Ly_San_Bay_Ca_Nhan\Quan Ly San Bay Ca Nhan\obj\Debug\Quan_Ly_May_Bay.FormNVBaoTri.resources
+C:\Users\KongDinh\Documents\Project\Winform\Quan_Ly_San_Bay_Ca_Nhan\Quan Ly San Bay Ca Nhan\obj\Debug\Quan_Ly_May_Bay.SubForm.FormChonNhanVien.resources
+C:\Users\KongDinh\Documents\Project\Winform\Quan_Ly_San_Bay_Ca_Nhan\Quan Ly San Bay Ca Nhan\obj\Debug\Quan_Ly_May_Bay.FormPhieuBaoTri.resources
+C:\Users\KongDinh\Documents\Project\Winform\Quan_Ly_San_Bay_Ca_Nhan\Quan Ly San Bay Ca Nhan\obj\Debug\Quan_Ly_May_Bay.FormCTPhieuBaoTri.resources

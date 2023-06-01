@@ -1,0 +1,14 @@
+CREATE PROC sp_DanhSachNVBaoTriMBLoai
+@idMayBay varchar(10)
+AS
+BEGIN
+DECLARE @idLoai varchar(10)
+SELECT @idLoai = IDLOAI FROM MAYBAY WHERE IDMAYBAY = @idMayBay
+
+SELECT NV.IDNHANVIEN, TEN FROM 
+	NHANVIEN NV INNER JOIN NGUOI NG ON NV.IDNGUOI = NG.IDNGUOI
+	WHERE NV.IDNHANVIEN IN 
+	(SELECT NVBT.IDNHANVIEN FROM CT_NVBAOTRI NVBT  WHERE IDLOAI = @idLoai ) 
+END	
+
+--Dùng để chọn những nhân viên bảo trì sẽ sửa được loại máy bay được chọn

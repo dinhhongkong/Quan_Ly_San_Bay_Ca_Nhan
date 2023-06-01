@@ -63,9 +63,29 @@ namespace Quan_Ly_May_Bay.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap add_240px {
+            get {
+                object obj = ResourceManager.GetObject("add_240px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap airplane_192px {
             get {
                 object obj = ResourceManager.GetObject("airplane_192px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap edit_row_512px {
+            get {
+                object obj = ResourceManager.GetObject("edit_row_512px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

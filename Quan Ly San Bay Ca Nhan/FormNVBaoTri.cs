@@ -122,14 +122,25 @@ namespace Quan_Ly_May_Bay
             return true;
         }
 
+        private bool kiemTraLoaiMayBay(string idLoaiMayBay)
+        {
+            for ( int i = 0; i < bdsCTNVBaoTri.Count; i++)
+            {
+                if (idLoaiMayBay == ((DataRowView)bdsCTNVBaoTri[i])["IDLOAI"].ToString())
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
         private void  themCTNhanVienBaoTri()
         {
             FormChonLoaiMB frmChonLoaiMB = new FormChonLoaiMB();
             while (frmChonLoaiMB.ShowDialog() == DialogResult.OK) 
             {
                 string idLoaiMayBay = frmChonLoaiMB.getIdLoai();
-                string kiemtra = $"SELECT IDLOAI FROM CT_NVBAOTRI WHERE IDLOAI= N'{idLoaiMayBay}' AND IDNHANVIEN = {txtIdNhanVien.Text}";
-                if (Program.ExecSqlDataReader(kiemtra).Read())
+                if (kiemTraLoaiMayBay(idLoaiMayBay) == false)
                 {
                     MessageBox.Show("Loại máy bay này đã có trong danh sách", "Thông báo", MessageBoxButtons.OK);
                     Program.conn.Close();
