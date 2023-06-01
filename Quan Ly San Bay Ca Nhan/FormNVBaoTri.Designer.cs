@@ -411,6 +411,7 @@
             // 
             // colIDNHANVIEN
             // 
+            this.colIDNHANVIEN.Caption = "ID Nhân viên";
             this.colIDNHANVIEN.FieldName = "IDNHANVIEN";
             this.colIDNHANVIEN.MinWidth = 25;
             this.colIDNHANVIEN.Name = "colIDNHANVIEN";
@@ -421,6 +422,7 @@
             // 
             // colTEN
             // 
+            this.colTEN.Caption = "Họ và Tên";
             this.colTEN.FieldName = "TEN";
             this.colTEN.MinWidth = 25;
             this.colTEN.Name = "colTEN";
@@ -441,6 +443,7 @@
             // 
             // colDIACHI
             // 
+            this.colDIACHI.Caption = "Địa Chỉ";
             this.colDIACHI.FieldName = "DIACHI";
             this.colDIACHI.MinWidth = 25;
             this.colDIACHI.Name = "colDIACHI";
@@ -451,6 +454,7 @@
             // 
             // colSDT
             // 
+            this.colSDT.Caption = "SĐT";
             this.colSDT.FieldName = "SDT";
             this.colSDT.MinWidth = 25;
             this.colSDT.Name = "colSDT";
@@ -461,6 +465,7 @@
             // 
             // colLUONG
             // 
+            this.colLUONG.Caption = "Lương";
             this.colLUONG.FieldName = "LUONG";
             this.colLUONG.MinWidth = 25;
             this.colLUONG.Name = "colLUONG";
@@ -471,6 +476,7 @@
             // 
             // colCALAMVIEC
             // 
+            this.colCALAMVIEC.Caption = "Ca làm việc";
             this.colCALAMVIEC.FieldName = "CALAMVIEC";
             this.colCALAMVIEC.MinWidth = 25;
             this.colCALAMVIEC.Name = "colCALAMVIEC";
@@ -481,6 +487,7 @@
             // 
             // colTRANGTHAINGHI
             // 
+            this.colTRANGTHAINGHI.Caption = "Trạng thái nghỉ";
             this.colTRANGTHAINGHI.FieldName = "TRANGTHAINGHI";
             this.colTRANGTHAINGHI.MinWidth = 25;
             this.colTRANGTHAINGHI.Name = "colTRANGTHAINGHI";
@@ -526,6 +533,7 @@
             // 
             // colIDNHANVIEN1
             // 
+            this.colIDNHANVIEN1.Caption = "ID Nhân viên";
             this.colIDNHANVIEN1.FieldName = "IDNHANVIEN";
             this.colIDNHANVIEN1.MinWidth = 25;
             this.colIDNHANVIEN1.Name = "colIDNHANVIEN1";
@@ -536,6 +544,7 @@
             // 
             // colIDLOAI
             // 
+            this.colIDLOAI.Caption = "Loại máy bay";
             this.colIDLOAI.ColumnEdit = this.repositoryItemLookUpEdit;
             this.colIDLOAI.FieldName = "IDLOAI";
             this.colIDLOAI.MinWidth = 25;
