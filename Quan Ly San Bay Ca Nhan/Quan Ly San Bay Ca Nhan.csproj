@@ -61,7 +61,7 @@
     <Compile Include="DS.cs">
       <DependentUpon>DS.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DS.Designer.cs">
+    <Compile Include="DS1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DS.xsd</DependentUpon>
@@ -108,11 +108,11 @@
     <Compile Include="FormNhanVien.Designer.cs">
       <DependentUpon>FormNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormNhanVienBaoTri.cs">
+    <Compile Include="FormNVBaoTri.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormNhanVienBaoTri.Designer.cs">
-      <DependentUpon>FormNhanVienBaoTri.cs</DependentUpon>
+    <Compile Include="FormNVBaoTri.Designer.cs">
+      <DependentUpon>FormNVBaoTri.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -127,6 +127,12 @@
     </Compile>
     <Compile Include="SubForm\FormChonMayBay.Designer.cs">
       <DependentUpon>FormChonMayBay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\FormChonNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\FormChonNhanVien.Designer.cs">
+      <DependentUpon>FormChonNhanVien.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="FormCaNhan.resx">
       <DependentUpon>FormCaNhan.cs</DependentUpon>
@@ -149,8 +155,8 @@
     <EmbeddedResource Include="FormNhanVien.resx">
       <DependentUpon>FormNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormNhanVienBaoTri.resx">
-      <DependentUpon>FormNhanVienBaoTri.cs</DependentUpon>
+    <EmbeddedResource Include="FormNVBaoTri.resx">
+      <DependentUpon>FormNVBaoTri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -168,6 +174,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SubForm\FormChonMayBay.resx">
       <DependentUpon>FormChonMayBay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\FormChonNhanVien.resx">
+      <DependentUpon>FormChonNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
     <None Include="DS.xsc">
@@ -199,6 +208,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Image\man_pilot_192px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Image\synchronize_512px.png" />
+    <Content Include="Image\remove_512px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

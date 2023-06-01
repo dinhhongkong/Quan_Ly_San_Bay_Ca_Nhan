@@ -135,5 +135,17 @@ namespace Quan_Ly_May_Bay
                 frmNhanVien.Show();
             }
         }
+
+        private void btnNvBaoTri_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = this.CheckExists(typeof(FormNVBaoTri));
+            if (frm != null) frm.Activate();
+            else
+            {
+                FormNVBaoTri frmNVBaoTri = new FormNVBaoTri();
+                frmNVBaoTri.MdiParent = this;
+                frmNVBaoTri.Show();
+            }
+        }
     }
 }

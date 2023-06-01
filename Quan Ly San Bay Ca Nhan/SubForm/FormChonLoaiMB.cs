@@ -11,6 +11,7 @@ using System.Windows.Forms;
 
 namespace Quan_Ly_May_Bay.SubForm
 {
+    
     public partial class FormChonLoaiMB : DevExpress.XtraEditors.XtraForm
     {
         private string maLoaiMayBay;

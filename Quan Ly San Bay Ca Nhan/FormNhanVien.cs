@@ -100,7 +100,7 @@ namespace Quan_Ly_May_Bay
                 MessageBox.Show("Địa chỉ không được bỏ trống", "Thông báo", MessageBoxButtons.OK);
                 return false;
             }
-            if (txtDiaChi.Text.Length > 13)
+            if (txtDiaChi.Text.Length > 100)
             {
                 MessageBox.Show("Địa chỉ không được có độ dài > 100 kí tự", "Thông báo", MessageBoxButtons.OK);
                 return false;

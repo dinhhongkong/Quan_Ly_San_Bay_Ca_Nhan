@@ -174,6 +174,7 @@
             this.btnNvBaoTri.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnNvBaoTri.ImageOptions.Image")));
             this.btnNvBaoTri.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnNvBaoTri.ImageOptions.LargeImage")));
             this.btnNvBaoTri.Name = "btnNvBaoTri";
+            this.btnNvBaoTri.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnNvBaoTri_ItemClick);
             // 
             // btnPhiCong
             // 

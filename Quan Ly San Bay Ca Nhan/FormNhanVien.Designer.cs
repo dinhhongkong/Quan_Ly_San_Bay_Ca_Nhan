@@ -510,7 +510,7 @@
             // 
             // bdsPhiCong
             // 
-            this.bdsPhiCong.DataMember = "FK_PHICONG_NHANVIEN1";
+            this.bdsPhiCong.DataMember = "FK_PHICONG_NHANVIEN";
             this.bdsPhiCong.DataSource = this.bdsNhanVien;
             // 
             // bdsNhanVien
