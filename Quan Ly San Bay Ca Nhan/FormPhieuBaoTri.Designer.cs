@@ -77,6 +77,7 @@
             this.tsmiXoa = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiHieuChinh = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiReload = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnHuy = new DevExpress.XtraBars.BarButtonItem();
             iDPHIEULabel = new System.Windows.Forms.Label();
             iDMAYBAYLabel = new System.Windows.Forms.Label();
             nGAYLAPLabel = new System.Windows.Forms.Label();
@@ -167,9 +168,10 @@
             this.btnGhi,
             this.btnXoa,
             this.btnReload,
-            this.btnThoat});
+            this.btnThoat,
+            this.btnHuy});
             this.barManager1.MainMenu = this.bar2;
-            this.barManager1.MaxItemId = 9;
+            this.barManager1.MaxItemId = 10;
             // 
             // bar2
             // 
@@ -183,6 +185,7 @@
             new DevExpress.XtraBars.LinkPersistInfo(this.btnHieuChinh),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnGhi),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnXoa),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnHuy),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnReload),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnThoat)});
             this.bar2.OptionsBar.MultiLine = true;
@@ -576,13 +579,13 @@
             this.tsmiHieuChinh,
             this.tsmiReload});
             this.cmsCTPhieuBaoTri.Name = "cmsCTPhieuBaoTri";
-            this.cmsCTPhieuBaoTri.Size = new System.Drawing.Size(215, 136);
+            this.cmsCTPhieuBaoTri.Size = new System.Drawing.Size(153, 108);
             // 
             // tsmiThem
             // 
             this.tsmiThem.Image = global::Quan_Ly_May_Bay.Properties.Resources.add_240px;
             this.tsmiThem.Name = "tsmiThem";
-            this.tsmiThem.Size = new System.Drawing.Size(214, 26);
+            this.tsmiThem.Size = new System.Drawing.Size(152, 26);
             this.tsmiThem.Text = "Thêm";
             this.tsmiThem.Click += new System.EventHandler(this.tsmiThem_Click);
             // 
@@ -590,7 +593,7 @@
             // 
             this.tsmiXoa.Image = global::Quan_Ly_May_Bay.Properties.Resources.remove_512px;
             this.tsmiXoa.Name = "tsmiXoa";
-            this.tsmiXoa.Size = new System.Drawing.Size(214, 26);
+            this.tsmiXoa.Size = new System.Drawing.Size(152, 26);
             this.tsmiXoa.Text = "Xóa";
             this.tsmiXoa.Click += new System.EventHandler(this.tsmiXoa_Click);
             // 
@@ -598,7 +601,7 @@
             // 
             this.tsmiHieuChinh.Image = global::Quan_Ly_May_Bay.Properties.Resources.edit_row_512px;
             this.tsmiHieuChinh.Name = "tsmiHieuChinh";
-            this.tsmiHieuChinh.Size = new System.Drawing.Size(214, 26);
+            this.tsmiHieuChinh.Size = new System.Drawing.Size(152, 26);
             this.tsmiHieuChinh.Text = "Hiệu chỉnh";
             this.tsmiHieuChinh.Click += new System.EventHandler(this.tsmiHieuChinh_Click);
             // 
@@ -606,9 +609,19 @@
             // 
             this.tsmiReload.Image = global::Quan_Ly_May_Bay.Properties.Resources.synchronize_512px;
             this.tsmiReload.Name = "tsmiReload";
-            this.tsmiReload.Size = new System.Drawing.Size(214, 26);
+            this.tsmiReload.Size = new System.Drawing.Size(152, 26);
             this.tsmiReload.Text = "Reload";
             this.tsmiReload.Click += new System.EventHandler(this.tsmiReload_Click);
+            // 
+            // btnHuy
+            // 
+            this.btnHuy.Caption = "Hủy";
+            this.btnHuy.Id = 9;
+            this.btnHuy.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
+            this.btnHuy.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.btnHuy.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnHuy_ItemClick);
             // 
             // FormPhieuBaoTri
             // 
@@ -692,5 +705,6 @@
         private System.Windows.Forms.ToolStripMenuItem tsmiXoa;
         private System.Windows.Forms.ToolStripMenuItem tsmiHieuChinh;
         private System.Windows.Forms.ToolStripMenuItem tsmiReload;
+        private DevExpress.XtraBars.BarButtonItem btnHuy;
     }
 }

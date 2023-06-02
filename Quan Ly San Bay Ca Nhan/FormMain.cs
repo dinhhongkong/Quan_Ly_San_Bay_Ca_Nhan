@@ -43,7 +43,6 @@ namespace Quan_Ly_May_Bay
             {
                 ribBaoTri.Visible = true;
             }
-            ribBaoTri.Visible = true;
         }
 
         private void btnDangNhap_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

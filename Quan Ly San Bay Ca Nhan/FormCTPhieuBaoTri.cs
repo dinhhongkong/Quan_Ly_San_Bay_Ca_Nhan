@@ -40,13 +40,9 @@ namespace Quan_Ly_May_Bay
                 System.Windows.Forms.MessageBox.Show(ex.Message);
             }
             this.txtMaPhieu.Text = MaPhieu;
-            if ( trangThai == TrangThai.THEM)
-            {
-                txtMaPhieu.ReadOnly = false;
-            }
+            
             if ( trangThai == TrangThai.HIEUCHINH)
             {
-                txtMaPhieu.ReadOnly = true;
                 txtIDNhanVien.Text = IdNhanVien;
                 txtMoTa.Text = MoTa;
                 gcNhanVien.Enabled = false;
@@ -66,6 +62,7 @@ namespace Quan_Ly_May_Bay
                 MessageBox.Show("Vui lòng chọn một nhân viên để bảo trì", "Thông báo", MessageBoxButtons.OK);
                 return;
             }
+
 
             if (string.IsNullOrEmpty(txtMoTa.Text))
             {

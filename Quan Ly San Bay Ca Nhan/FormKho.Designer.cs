@@ -75,10 +75,11 @@
             this.tsmiXoa = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiReload = new System.Windows.Forms.ToolStripMenuItem();
             this.gcChucNangCT = new DevExpress.XtraEditors.GroupControl();
+            this.txtIDKhoCT = new DevExpress.XtraEditors.TextEdit();
             this.btnThoatCT = new DevExpress.XtraEditors.SimpleButton();
             this.btnGhiCTKho = new DevExpress.XtraEditors.SimpleButton();
             this.txtIDMayBay = new DevExpress.XtraEditors.ButtonEdit();
-            this.txtIDKhoCT = new DevExpress.XtraEditors.TextEdit();
+            this.btnHuy = new DevExpress.XtraBars.BarButtonItem();
             iDKHOLabel = new System.Windows.Forms.Label();
             sUCCHUALabel = new System.Windows.Forms.Label();
             vITRILabel = new System.Windows.Forms.Label();
@@ -100,8 +101,8 @@
             this.cmsCTKho.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gcChucNangCT)).BeginInit();
             this.gcChucNangCT.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtIDMayBay.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtIDKhoCT.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtIDMayBay.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // iDKHOLabel
@@ -172,9 +173,10 @@
             this.btnPhucHoi,
             this.btnReload,
             this.btnCTKho,
-            this.btnThoat});
+            this.btnThoat,
+            this.btnHuy});
             this.barManager1.MainMenu = this.bar2;
-            this.barManager1.MaxItemId = 9;
+            this.barManager1.MaxItemId = 10;
             // 
             // bar2
             // 
@@ -188,6 +190,7 @@
             new DevExpress.XtraBars.LinkPersistInfo(this.btnHieuChinh),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnGhi),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnXoa),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnHuy),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnReload),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnCTKho),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnThoat)});
@@ -534,7 +537,7 @@
             // tsmiThem
             // 
             this.tsmiThem.Name = "tsmiThem";
-            this.tsmiThem.Size = new System.Drawing.Size(202, 24);
+            this.tsmiThem.Size = new System.Drawing.Size(225, 24);
             this.tsmiThem.Text = "Thêm chi tiết kho";
             this.tsmiThem.Click += new System.EventHandler(this.tsmiThem_Click);
             // 
@@ -548,14 +551,14 @@
             // tsmiXoa
             // 
             this.tsmiXoa.Name = "tsmiXoa";
-            this.tsmiXoa.Size = new System.Drawing.Size(202, 24);
+            this.tsmiXoa.Size = new System.Drawing.Size(225, 24);
             this.tsmiXoa.Text = "Xóa chi tiết kho";
             this.tsmiXoa.Click += new System.EventHandler(this.tsmiXoa_Click);
             // 
             // tsmiReload
             // 
             this.tsmiReload.Name = "tsmiReload";
-            this.tsmiReload.Size = new System.Drawing.Size(202, 24);
+            this.tsmiReload.Size = new System.Drawing.Size(225, 24);
             this.tsmiReload.Text = "Reload chi tiết kho";
             this.tsmiReload.Click += new System.EventHandler(this.tsmiReload_Click);
             // 
@@ -575,6 +578,18 @@
             this.gcChucNangCT.TabIndex = 11;
             this.gcChucNangCT.Text = "Nhập liệu chi tiết kho";
             this.gcChucNangCT.Visible = false;
+            // 
+            // txtIDKhoCT
+            // 
+            this.txtIDKhoCT.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bdsKho, "IDKHO", true));
+            this.txtIDKhoCT.Location = new System.Drawing.Point(177, 74);
+            this.txtIDKhoCT.MenuManager = this.barManager1;
+            this.txtIDKhoCT.Name = "txtIDKhoCT";
+            this.txtIDKhoCT.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIDKhoCT.Properties.Appearance.Options.UseFont = true;
+            this.txtIDKhoCT.Properties.ReadOnly = true;
+            this.txtIDKhoCT.Size = new System.Drawing.Size(170, 30);
+            this.txtIDKhoCT.TabIndex = 6;
             // 
             // btnThoatCT
             // 
@@ -613,17 +628,15 @@
             this.txtIDMayBay.TabIndex = 3;
             this.txtIDMayBay.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.txtIDMayBay_ButtonClick);
             // 
-            // txtIDKhoCT
+            // btnHuy
             // 
-            this.txtIDKhoCT.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bdsKho, "IDKHO", true));
-            this.txtIDKhoCT.Location = new System.Drawing.Point(177, 74);
-            this.txtIDKhoCT.MenuManager = this.barManager1;
-            this.txtIDKhoCT.Name = "txtIDKhoCT";
-            this.txtIDKhoCT.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIDKhoCT.Properties.Appearance.Options.UseFont = true;
-            this.txtIDKhoCT.Properties.ReadOnly = true;
-            this.txtIDKhoCT.Size = new System.Drawing.Size(170, 30);
-            this.txtIDKhoCT.TabIndex = 6;
+            this.btnHuy.Caption = "Hủy";
+            this.btnHuy.Id = 9;
+            this.btnHuy.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
+            this.btnHuy.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.btnHuy.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnHuy_ItemClick);
             // 
             // FormKho
             // 
@@ -659,8 +672,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.gcChucNangCT)).EndInit();
             this.gcChucNangCT.ResumeLayout(false);
             this.gcChucNangCT.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtIDMayBay.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtIDKhoCT.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtIDMayBay.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -712,5 +725,6 @@
         private System.Windows.Forms.ToolStripMenuItem tsmiReload;
         private DevExpress.XtraEditors.SimpleButton btnThoatCT;
         private DevExpress.XtraEditors.TextEdit txtIDKhoCT;
+        private DevExpress.XtraBars.BarButtonItem btnHuy;
     }
 }

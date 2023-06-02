@@ -66,8 +66,6 @@
             this.colCALAMVIEC = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colTRANGTHAINGHI = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gcChucNang = new DevExpress.XtraEditors.GroupControl();
-            this.bdsPhiCong = new System.Windows.Forms.BindingSource(this.components);
-            this.bdsNhanVien = new System.Windows.Forms.BindingSource(this.components);
             this.chkTrangThaiNghi = new DevExpress.XtraEditors.CheckEdit();
             this.nudCaLamViec = new DevExpress.XtraEditors.SpinEdit();
             this.nudLuong = new DevExpress.XtraEditors.SpinEdit();
@@ -76,6 +74,8 @@
             this.txtCMND = new DevExpress.XtraEditors.TextEdit();
             this.txtHoTen = new DevExpress.XtraEditors.TextEdit();
             this.txtIdNhanVien = new DevExpress.XtraEditors.TextEdit();
+            this.bdsPhiCong = new System.Windows.Forms.BindingSource(this.components);
+            this.bdsNhanVien = new System.Windows.Forms.BindingSource(this.components);
             this.nHANVIENTableAdapter = new Quan_Ly_May_Bay.DSTableAdapters.NHANVIENTableAdapter();
             this.bdsPhieuBaoTri = new System.Windows.Forms.BindingSource(this.components);
             this.pHIEUBAOTRITableAdapter = new Quan_Ly_May_Bay.DSTableAdapters.PHIEUBAOTRITableAdapter();
@@ -84,6 +84,7 @@
             this.bdsCTPhieuBaoTri = new System.Windows.Forms.BindingSource(this.components);
             this.cT_PHIEUBAOTRITableAdapter = new Quan_Ly_May_Bay.DSTableAdapters.CT_PHIEUBAOTRITableAdapter();
             this.pHICONGTableAdapter = new Quan_Ly_May_Bay.DSTableAdapters.PHICONGTableAdapter();
+            this.btnHuy = new DevExpress.XtraBars.BarButtonItem();
             iDNHANVIENLabel = new System.Windows.Forms.Label();
             tENLabel = new System.Windows.Forms.Label();
             cMNDLabel = new System.Windows.Forms.Label();
@@ -99,8 +100,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gvNhanVien)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcChucNang)).BeginInit();
             this.gcChucNang.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bdsPhiCong)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bdsNhanVien)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chkTrangThaiNghi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudCaLamViec.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudLuong.Properties)).BeginInit();
@@ -109,6 +108,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtCMND.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtHoTen.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtIdNhanVien.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bdsPhiCong)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bdsNhanVien)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdsPhieuBaoTri)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdsNVBaoTri)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdsCTPhieuBaoTri)).BeginInit();
@@ -210,9 +211,10 @@
             this.btnGhi,
             this.btnXoa,
             this.btnReload,
-            this.btnThoat});
+            this.btnThoat,
+            this.btnHuy});
             this.barManager1.MainMenu = this.bar2;
-            this.barManager1.MaxItemId = 9;
+            this.barManager1.MaxItemId = 10;
             // 
             // bar2
             // 
@@ -226,6 +228,7 @@
             new DevExpress.XtraBars.LinkPersistInfo(this.btnHieuChinh),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnGhi),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnXoa),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnHuy),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnReload),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnThoat)});
             this.bar2.OptionsBar.MultiLine = true;
@@ -508,16 +511,6 @@
             this.gcChucNang.TabIndex = 10;
             this.gcChucNang.Text = "Nhập liệu";
             // 
-            // bdsPhiCong
-            // 
-            this.bdsPhiCong.DataMember = "FK_PHICONG_NHANVIEN";
-            this.bdsPhiCong.DataSource = this.bdsNhanVien;
-            // 
-            // bdsNhanVien
-            // 
-            this.bdsNhanVien.DataMember = "FK_sp_DanhSachNhanVien_NHANVIEN";
-            this.bdsNhanVien.DataSource = this.bdsDsNV;
-            // 
             // chkTrangThaiNghi
             // 
             this.chkTrangThaiNghi.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bdsDsNV, "TRANGTHAINGHI", true));
@@ -641,6 +634,16 @@
             this.txtIdNhanVien.Size = new System.Drawing.Size(205, 30);
             this.txtIdNhanVien.TabIndex = 1;
             // 
+            // bdsPhiCong
+            // 
+            this.bdsPhiCong.DataMember = "FK_PHICONG_NHANVIEN";
+            this.bdsPhiCong.DataSource = this.bdsNhanVien;
+            // 
+            // bdsNhanVien
+            // 
+            this.bdsNhanVien.DataMember = "FK_sp_DanhSachNhanVien_NHANVIEN";
+            this.bdsNhanVien.DataSource = this.bdsDsNV;
+            // 
             // nHANVIENTableAdapter
             // 
             this.nHANVIENTableAdapter.ClearBeforeFill = true;
@@ -676,6 +679,16 @@
             // 
             this.pHICONGTableAdapter.ClearBeforeFill = true;
             // 
+            // btnHuy
+            // 
+            this.btnHuy.Caption = "Hủy";
+            this.btnHuy.Id = 9;
+            this.btnHuy.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
+            this.btnHuy.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.btnHuy.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnHuy_ItemClick);
+            // 
             // FormNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -698,8 +711,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gcChucNang)).EndInit();
             this.gcChucNang.ResumeLayout(false);
             this.gcChucNang.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bdsPhiCong)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bdsNhanVien)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chkTrangThaiNghi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudCaLamViec.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudLuong.Properties)).EndInit();
@@ -708,6 +719,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtCMND.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtHoTen.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtIdNhanVien.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bdsPhiCong)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bdsNhanVien)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdsPhieuBaoTri)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdsNVBaoTri)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdsCTPhieuBaoTri)).EndInit();
@@ -764,5 +777,6 @@
         private DSTableAdapters.CT_PHIEUBAOTRITableAdapter cT_PHIEUBAOTRITableAdapter;
         private DSTableAdapters.PHICONGTableAdapter pHICONGTableAdapter;
         private System.Windows.Forms.BindingSource bdsPhiCong;
+        private DevExpress.XtraBars.BarButtonItem btnHuy;
     }
 }

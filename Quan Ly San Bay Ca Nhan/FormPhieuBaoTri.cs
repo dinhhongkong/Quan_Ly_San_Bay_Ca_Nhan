@@ -44,7 +44,7 @@ namespace Quan_Ly_May_Bay
                 MessageBox.Show("Số giờ không được bằng 0", "Thông báo", MessageBoxButtons.OK);
                 return false;
             }
-            if ( trangThai == TrangThai.THEM && bdsPhieuBaoTri.Find("IDPHIEU", txtMaPhieu) > -1)
+            if ( trangThai == TrangThai.THEM && bdsPhieuBaoTri.Find("IDPHIEU", txtMaPhieu.Text) > -1)
             {
                 MessageBox.Show("Mã phiếu đã tồn tại, vui lòng nhập mã phiếu khác", "Thông báo", MessageBoxButtons.OK);
                 return false;
@@ -78,11 +78,37 @@ namespace Quan_Ly_May_Bay
             trangThai = TrangThai.THEM;
         }
 
+        private void btnHuy_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (trangThai == TrangThai.THEM)
+            {
+                bdsPhieuBaoTri.RemoveCurrent();
+                bdsPhieuBaoTri.CancelEdit();
+            }
+            else if (trangThai == TrangThai.HIEUCHINH)
+            {
+                bdsPhieuBaoTri.CancelEdit();
+            }
+
+            gcPhieuBaoTri.Enabled = true;
+            gcChucNang.Enabled = false;
+            gcCTPhieuBaoTri.Enabled = true;
+            btnThem.Enabled = true;
+            btnHieuChinh.Enabled = true;
+            btnXoa.Enabled = true;
+            btnReload.Enabled = true;
+            btnGhi.Enabled = false;
+            txtMaPhieu.Enabled = true;
+            txtMaPhieu.Enabled = true;
+            trangThai = TrangThai.NONE;
+
+           
+        }
+
         private void btnHieuChinh_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if ( Program.userName != ((DataRowView)bdsPhieuBaoTri[bdsPhieuBaoTri.Position])["IDMAYBAY"].ToString())
+            if (kiemTraNguoiLap() == false)
             {
-                MessageBox.Show("Chỉ người lập phiếu mới có quyền sửa", "Thông báo", MessageBoxButtons.OK);
                 return;
             }
             gcChucNang.Enabled = true;
@@ -177,11 +203,15 @@ namespace Quan_Ly_May_Bay
 
         private void btnThoat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            this.Dispose();
         }
 
         private void txtIDMayBay_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
         {
+            if ( trangThai == TrangThai.HIEUCHINH)
+            {
+                return;
+            }
             FormChonMayBay frmChonMayBay = new FormChonMayBay();
             if (frmChonMayBay.ShowDialog() == DialogResult.OK)
             {
@@ -295,5 +325,7 @@ namespace Quan_Ly_May_Bay
         {
             this.cT_PHIEUBAOTRITableAdapter.Fill(this.ds.CT_PHIEUBAOTRI);
         }
+
+        
     }
 }

@@ -44,7 +44,7 @@
             this.btnHieuChinh = new DevExpress.XtraBars.BarButtonItem();
             this.btnGhi = new DevExpress.XtraBars.BarButtonItem();
             this.btnReload = new DevExpress.XtraBars.BarButtonItem();
-            this.btnPhucHoi = new DevExpress.XtraBars.BarButtonItem();
+            this.btnHuy = new DevExpress.XtraBars.BarButtonItem();
             this.btnLoaiMayBay = new DevExpress.XtraBars.BarButtonItem();
             this.btnThoat = new DevExpress.XtraBars.BarButtonItem();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
@@ -216,7 +216,7 @@
             this.btnReload,
             this.btnLoaiMayBay,
             this.btnThoat,
-            this.btnPhucHoi});
+            this.btnHuy});
             this.barManager1.MainMenu = this.bar2;
             this.barManager1.MaxItemId = 10;
             // 
@@ -232,7 +232,7 @@
             new DevExpress.XtraBars.LinkPersistInfo(this.btnHieuChinh),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnGhi),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnReload),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnPhucHoi),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnHuy),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnLoaiMayBay),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnThoat)});
             this.bar2.OptionsBar.MultiLine = true;
@@ -279,14 +279,15 @@
             this.btnReload.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.btnReload.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnReload_ItemClick);
             // 
-            // btnPhucHoi
+            // btnHuy
             // 
-            this.btnPhucHoi.Caption = "Phục hồi";
-            this.btnPhucHoi.Id = 9;
-            this.btnPhucHoi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnPhucHoi.ImageOptions.Image")));
-            this.btnPhucHoi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnPhucHoi.ImageOptions.LargeImage")));
-            this.btnPhucHoi.Name = "btnPhucHoi";
-            this.btnPhucHoi.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.btnHuy.Caption = "Hủy";
+            this.btnHuy.Id = 9;
+            this.btnHuy.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnPhucHoi.ImageOptions.Image")));
+            this.btnHuy.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnPhucHoi.ImageOptions.LargeImage")));
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.btnHuy.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnHuy_ItemClick);
             // 
             // btnLoaiMayBay
             // 
@@ -840,7 +841,7 @@
         private DevExpress.XtraEditors.TextEdit txtHoTen;
         private DevExpress.XtraEditors.TextEdit txtIdNhanVien;
         private DevExpress.XtraEditors.SimpleButton btnChonNV;
-        private DevExpress.XtraBars.BarButtonItem btnPhucHoi;
+        private DevExpress.XtraBars.BarButtonItem btnHuy;
         private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit repositoryItemLookUpEdit;
         private DevExpress.XtraGrid.Columns.GridColumn colIDNHANVIEN1;
         private DevExpress.XtraGrid.Columns.GridColumn colIDLOAI;

@@ -280,20 +280,8 @@ namespace Quan_Ly_May_Bay
 
         private void btnThoat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (trangThai == TrangThai.THEM)
-            {
-                bdsDsNVBaoTri.RemoveCurrent();
-                bdsDsNVBaoTri.CancelEdit();
-            }
-
-            chinhSuaNutLenh(true);
-            btnChonNV.Enabled = false;
-            gcDSNVBaoTri.Enabled = true;
-            btnThem.Enabled = true;
-            btnHieuChinh.Enabled = true;
-            btnReload.Enabled = true;
-            btnGhi.Enabled = false;
-            trangThai = TrangThai.NONE;
+            this.Dispose();
+            
         }
 
         private void gvCTNVBaoTri_RowCellClick(object sender, DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs e)
@@ -314,6 +302,24 @@ namespace Quan_Ly_May_Bay
         private void tsmiReload_Click(object sender, EventArgs e)
         {
             this.cT_NVBAOTRITableAdapter.Fill(this.ds.CT_NVBAOTRI);
+        }
+
+        private void btnHuy_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (trangThai == TrangThai.THEM)
+            {
+                bdsDsNVBaoTri.RemoveCurrent();
+                bdsDsNVBaoTri.CancelEdit();
+            }
+
+            chinhSuaNutLenh(true);
+            btnChonNV.Enabled = false;
+            gcDSNVBaoTri.Enabled = true;
+            btnThem.Enabled = true;
+            btnHieuChinh.Enabled = true;
+            btnReload.Enabled = true;
+            btnGhi.Enabled = false;
+            trangThai = TrangThai.NONE;
         }
     }
 }

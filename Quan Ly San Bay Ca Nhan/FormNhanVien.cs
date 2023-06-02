@@ -272,6 +272,12 @@ namespace Quan_Ly_May_Bay
 
         private void btnThoat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+            this.Dispose();
+            
+        }
+
+        private void btnHuy_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
             if (trangThai == TrangThai.THEM)
             {
                 bdsDsNV.RemoveCurrent();

@@ -170,12 +170,28 @@ namespace Quan_Ly_May_Bay
 
         private void btnThoat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if ( trangThai == TrangThai.THEM)
+            this.Dispose();
+            
+        }
+
+        private void txtLoai_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
+        {
+            FormChonLoaiMB frmLoaiMB = new FormChonLoaiMB();
+            if (frmLoaiMB.ShowDialog() == DialogResult.OK )
+            {
+                txtLoai.Text = frmLoaiMB.getIdLoai();
+            }
+            frmLoaiMB.Dispose();
+        }
+
+        private void btnHuy_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (trangThai == TrangThai.THEM)
             {
                 bdsMayBay.RemoveCurrent();
                 bdsMayBay.CancelEdit();
             }
-            else if ( trangThai == TrangThai.HIEUCHINH)
+            else if (trangThai == TrangThai.HIEUCHINH)
             {
                 bdsMayBay.CancelEdit();
             }
@@ -188,16 +204,6 @@ namespace Quan_Ly_May_Bay
             btnGhi.Enabled = false;
             txtIdMayBay.Enabled = true;
             trangThai = TrangThai.NONE;
-        }
-
-        private void txtLoai_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
-        {
-            FormChonLoaiMB frmLoaiMB = new FormChonLoaiMB();
-            if (frmLoaiMB.ShowDialog() == DialogResult.OK )
-            {
-                txtLoai.Text = frmLoaiMB.getIdLoai();
-            }
-            frmLoaiMB.Dispose();
         }
     }
 }

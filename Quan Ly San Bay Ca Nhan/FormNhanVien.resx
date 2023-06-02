@@ -309,6 +309,29 @@
         J04Y0H7BLiGRjUDH8PeI79jxD5FSNIWmYLkBAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="barButtonItem2.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAARdEVYdFRpdGxlAFVuZG87UmVzZXQ7rSUGkAAAANlJREFUOE+l08EKAVEUxvGZslLKzkYkFryG
+        vbW9rVcQmtfAe9jKygtYSCILpXiBwfU/mlPXdTGy+GnG+c5nzDSBMeYvQSuauqrYwyTGCOHLvhRUsEOq
+        ZWGflLGFLk/wcVnoQQkb/LQs5KOINXTZ54g5ItTwVCAD39I7V4yQw6OggQN84Qti5zu1QFYvpQ67RC5V
+        Z0r+agd2rm8H3JIh7LlqQjMrd+iWDOBmMrhB5rE7FFIiT+Wc6MKe56E/cLIHacl90IKZL/BNAUtIQdsX
+        SENKegi9r2h6JrgDU9IKnogyyywAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="barButtonItem2.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAARdEVYdFRpdGxlAFVuZG87UmVzZXQ7rSUGkAAAAZFJREFUWEfF1kErRGEYxfFBIb6BsmZlIUlJ
+        2VmxklI+gI21ZkkWFtIslLJiyYIlK/kMNmx9AkqTTHT9n5pbj/c9jTFuj8Wvxum897xNt0mtKIp/JcNI
+        Mowkw0gyjCTDSDKMJMPl3RulD8conBZWoPoZtSVDcdjGj+DHP7AK1ZfUlgyTgzbeQDq+hrTbkdqSYXLw
+        EOn4OtLej9SWDN2hA6TjG/CdrqktGbYP7MOPd/KMB1xgE+P4Nm7Ulgwp70ENdcu+qUtMoacLpC9dr96x
+        jV9fwN78E6iH9mIHckuGVkY/TuEf1MQiyo43CvvKt2Dvgz/3iWm1lQWGcmkA5/APs0sswPdSw7iDP3em
+        trLAUPYGcQX/sFfMI+16s/BnntRWFhjKKbvENfwDXzAH1TdD8P2W2soCQ1kZwS38Q+0SM1D9MfhuU21l
+        gaFcBfu59he4V1tZYCj/lb28j/AXaKitLDCUq7CEN9i4/d8wqbaywFCuSnmJuv2ttmTYPlyVifKz2pJh
+        JBlGkmEkGUaSYSQZxilqX1JXK1huI8+cAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="btnReload.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v22.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjIyLjIsIFZlcnNpb249MjIuMi40

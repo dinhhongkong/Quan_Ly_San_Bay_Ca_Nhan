@@ -176,32 +176,7 @@ namespace Quan_Ly_May_Bay
 
         private void btnThoat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (trangThai == TrangThai.THEM)
-            {
-                bdsKho.RemoveCurrent();
-                bdsKho.CancelEdit();
-            }
-            else if (trangThai == TrangThai.HIEUCHINH)
-            {
-                bdsKho.CancelEdit();
-            }
-            else if ( trangThai == TrangThai.CHITIET)
-            {
-                gcChucNang.Visible = true;
-                gcChucNangCT.Visible = false;
-                gcCTKho.Enabled = false;
-            }
-            
-            gcKho.Enabled = true;
-            gcChucNang.Enabled = false;
-            btnThem.Enabled = true;
-            btnHieuChinh.Enabled = true;
-            btnXoa.Enabled = true;
-            btnReload.Enabled = true;
-            btnGhi.Enabled = false;
-            btnCTKho.Enabled = true;
-            txtIdKho.Enabled = true;
-            trangThai = TrangThai.NONE;
+            this.Dispose();
         }
 
         private void gvCTKho_MouseDown(object sender, MouseEventArgs e)
@@ -295,6 +270,36 @@ namespace Quan_Ly_May_Bay
                 txtIDMayBay.Text = formChonMayBay.getIDMayBay();
             }
             formChonMayBay.Dispose();
+        }
+
+        private void btnHuy_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (trangThai == TrangThai.THEM)
+            {
+                bdsKho.RemoveCurrent();
+                bdsKho.CancelEdit();
+            }
+            else if (trangThai == TrangThai.HIEUCHINH)
+            {
+                bdsKho.CancelEdit();
+            }
+            else if (trangThai == TrangThai.CHITIET)
+            {
+                gcChucNang.Visible = true;
+                gcChucNangCT.Visible = false;
+                gcCTKho.Enabled = false;
+            }
+
+            gcKho.Enabled = true;
+            gcChucNang.Enabled = false;
+            btnThem.Enabled = true;
+            btnHieuChinh.Enabled = true;
+            btnXoa.Enabled = true;
+            btnReload.Enabled = true;
+            btnGhi.Enabled = false;
+            btnCTKho.Enabled = true;
+            txtIdKho.Enabled = true;
+            trangThai = TrangThai.NONE;
         }
     }
 }

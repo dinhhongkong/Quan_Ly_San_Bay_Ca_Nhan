@@ -62,6 +62,7 @@
             this.bdsMayBay = new System.Windows.Forms.BindingSource(this.components);
             this.bdsNVBaoTri = new System.Windows.Forms.BindingSource(this.components);
             this.bdsCTBangLai = new System.Windows.Forms.BindingSource(this.components);
+            this.btnHuy = new DevExpress.XtraBars.BarButtonItem();
             iDLOAILabel = new System.Windows.Forms.Label();
             tENLOAILabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
@@ -114,9 +115,10 @@
             this.btnGhi,
             this.btnXoa,
             this.btnReload,
-            this.btnThoat});
+            this.btnThoat,
+            this.btnHuy});
             this.barManager1.MainMenu = this.bar2;
-            this.barManager1.MaxItemId = 9;
+            this.barManager1.MaxItemId = 10;
             // 
             // bar2
             // 
@@ -130,6 +132,7 @@
             new DevExpress.XtraBars.LinkPersistInfo(this.btnHieuChinh),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnGhi),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnXoa),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnHuy),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnReload),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnThoat)});
             this.bar2.OptionsBar.MultiLine = true;
@@ -378,6 +381,16 @@
             this.bdsCTBangLai.DataMember = "FK_CT_BANGLAI_LOAIMAYBAY";
             this.bdsCTBangLai.DataSource = this.bdsLoaiMB;
             // 
+            // btnHuy
+            // 
+            this.btnHuy.Caption = "Hủy";
+            this.btnHuy.Id = 9;
+            this.btnHuy.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnHuy.ImageOptions.Image")));
+            this.btnHuy.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnHuy.ImageOptions.LargeImage")));
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.btnHuy.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnHuy_ItemClick);
+            // 
             // FormLoaiMayBay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -442,5 +455,6 @@
         private System.Windows.Forms.BindingSource bdsNVBaoTri;
         private DSTableAdapters.CT_BANGLAITableAdapter cT_BANGLAITableAdapter;
         private System.Windows.Forms.BindingSource bdsCTBangLai;
+        private DevExpress.XtraBars.BarButtonItem btnHuy;
     }
 }
