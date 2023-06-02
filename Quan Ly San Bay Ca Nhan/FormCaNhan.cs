@@ -31,19 +31,15 @@ namespace Quan_Ly_May_Bay
         {
             this.DS.EnforceConstraints = false;
 
-            // TODO: This line of code loads data into the 'DS.NGUOI' table. You can move, or remove it, as needed.
             this.NGUOITableAdapter.Connection.ConnectionString = Program.connstr;
             this.NGUOITableAdapter.Fill(this.DS.NGUOI);
 
-            // TODO: This line of code loads data into the 'DS.CT_CHUMAYBAY' table. You can move, or remove it, as needed.
             this.CT_CHUMAYBAYTableAdapter.Connection.ConnectionString = Program.connstr;
             this.CT_CHUMAYBAYTableAdapter.Fill(this.DS.CT_CHUMAYBAY);
 
-            // TODO: This line of code loads data into the 'DS.sp_DanhSachChuMayBay' table. You can move, or remove it, as needed.
             this.sp_DanhSachChuMayBayTableAdapter.Connection.ConnectionString = Program.connstr;
             this.sp_DanhSachChuMayBayTableAdapter.Fill(this.DS.sp_DanhSachChuMayBay);
 
-            // TODO: This line of code loads data into the 'dS.sp_DanhSachCaNhan' table. You can move, or remove it, as needed.
             this.sp_DanhSachCaNhanTableAdapter.Connection.ConnectionString = Program.connstr;
             this.sp_DanhSachCaNhanTableAdapter.Fill(this.DS.sp_DanhSachCaNhan);
 
@@ -381,6 +377,52 @@ namespace Quan_Ly_May_Bay
         private void btnThoat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             this.Dispose();
+        }
+
+        private void tsmiXoa_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có thật sự muốn xóa máy bay sở hữu này", "Xác nhận", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            {
+                string ownerId = txtOWNER_ID.Text;
+                string idMayBay = ((DataRowView)bdsDSCHUMAYBAY[bdsDSCHUMAYBAY.Position])["IDMAYBAY"].ToString();
+                string ngayBatDau = ((DataRowView)bdsDSCHUMAYBAY[bdsDSCHUMAYBAY.Position])["NGAYBATDAU"].ToString();
+
+                string lenh = $"DELETE FROM CT_CHUMAYBAY WHERE OWNER_ID = '{ownerId}' AND IDMAYBAY = '{idMayBay}' AND NGAYBATDAU = '{ngayBatDau}'";
+
+                if (Program.ExecSqlNonQuery(lenh) != 0)
+                {
+                    MessageBox.Show("Lỗi xóa máy bay. Bạn hãy xem lại\n", "Thông báo", MessageBoxButtons.OK);
+                    return;
+                }
+                this.CT_CHUMAYBAYTableAdapter.Fill(this.DS.CT_CHUMAYBAY);
+                this.sp_DanhSachChuMayBayTableAdapter.Fill(this.DS.sp_DanhSachChuMayBay);
+            }
+        }
+
+        private void tsmiReload_Click(object sender, EventArgs e)
+        {
+            this.CT_CHUMAYBAYTableAdapter.Fill(this.DS.CT_CHUMAYBAY);
+            this.sp_DanhSachChuMayBayTableAdapter.Fill(this.DS.sp_DanhSachChuMayBay);
+        }
+
+        private void gvDSMAYBAY_RowCellClick(object sender, DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs e)
+        {
+            if ( e.Button == MouseButtons.Right ) 
+            {
+                gcDSMAYBAY.ContextMenuStrip = cmsChucNang;
+            }
+        }
+
+        private void btnHienTaiSoHuu_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            gcDSMAYBAY.Visible = true;
+            gcCT_CHUMAYBAY.Visible = false;
+        }
+
+        private void btnLichSuSoHuu_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            gcDSMAYBAY.Visible = false;
+            gcCT_CHUMAYBAY.Visible = true;
         }
     }
 }

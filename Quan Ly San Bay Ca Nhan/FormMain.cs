@@ -159,5 +159,17 @@ namespace Quan_Ly_May_Bay
                 frmPhieuBaoTri.Show();
             }
         }
+
+        private void btnDoanhNghiep_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = this.CheckExists(typeof(FormDoanhNghiep));
+            if (frm != null) frm.Activate();
+            else
+            {
+                FormDoanhNghiep frmDoanhNghiep = new FormDoanhNghiep();
+                frmDoanhNghiep.MdiParent = this;
+                frmDoanhNghiep.Show();
+            }
+        }
     }
 }

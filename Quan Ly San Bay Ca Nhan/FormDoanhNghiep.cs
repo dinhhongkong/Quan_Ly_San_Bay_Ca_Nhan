@@ -178,18 +178,9 @@ namespace Quan_Ly_May_Bay
                 {
                     bdsDOANHNGHIEP.EndEdit();
                     bdsDOANHNGHIEP.ResetCurrentItem();
-                    // TODO: This line of code loads data into the 'DS.NGUOI' table. You can move, or remove it, as needed.
-                    this.DOANHNGHIEPTableAdapter.Connection.ConnectionString = Program.connstr;
                     this.DOANHNGHIEPTableAdapter.Update(this.DS.DOANHNGHIEP);
                 }
-
-                // TODO: This line of code loads data into the 'DS.CT_CHUMAYBAY' table. You can move, or remove it, as needed.
-                this.CT_CHUMAYBAYTableAdapter.Connection.ConnectionString = Program.connstr;
                 this.CT_CHUMAYBAYTableAdapter.Fill(this.DS.CT_CHUMAYBAY);
-
-
-                // TODO: This line of code loads data into the 'DS.sp_DanhSachChuMayBay' table. You can move, or remove it, as needed.
-                this.sp_DanhSachChuMayBayTableAdapter.Connection.ConnectionString = Program.connstr;
                 this.sp_DanhSachChuMayBayTableAdapter.Fill(this.DS.sp_DanhSachChuMayBay);
 
                 if (isAdd == true)
@@ -249,7 +240,7 @@ namespace Quan_Ly_May_Bay
                 return;
             }
 
-            if (MessageBox.Show("Bạn có muốn xóa Cá nhân này không ?", "OK", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            if (MessageBox.Show("Bạn có muốn xóa doanh nghiệp này không ?", "OK", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
                 try
                 {
@@ -257,35 +248,18 @@ namespace Quan_Ly_May_Bay
 
                     TruyVanNhanh($"EXEC sp_XoaDoanhNghiep '{maDoanhNghiep}'");
 
-                    // TODO: This line of code loads data into the 'dS.DOANHNGHIEP' table. You can move, or remove it, as needed.
-                    this.DOANHNGHIEPTableAdapter.Connection.ConnectionString = Program.connstr;
                     this.DOANHNGHIEPTableAdapter.Fill(this.DS.DOANHNGHIEP);
-
-                    // TODO: This line of code loads data into the 'DS.CT_CHUMAYBAY' table. You can move, or remove it, as needed.
-                    this.CT_CHUMAYBAYTableAdapter.Connection.ConnectionString = Program.connstr;
                     this.CT_CHUMAYBAYTableAdapter.Fill(this.DS.CT_CHUMAYBAY);
-
-                    // TODO: This line of code loads data into the 'dS.sp_DanhSachChuMayBay' table. You can move, or remove it, as needed.
-                    this.sp_DanhSachChuMayBayTableAdapter.Connection.ConnectionString = Program.connstr;
                     this.sp_DanhSachChuMayBayTableAdapter.Fill(this.DS.sp_DanhSachChuMayBay);
 
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show($"{ex}", "", MessageBoxButtons.OK);
-                    // TODO: This line of code loads data into the 'dS.DOANHNGHIEP' table. You can move, or remove it, as needed.
-                    this.DOANHNGHIEPTableAdapter.Connection.ConnectionString = Program.connstr;
                     this.DOANHNGHIEPTableAdapter.Fill(this.DS.DOANHNGHIEP);
-
-                    // TODO: This line of code loads data into the 'DS.CT_CHUMAYBAY' table. You can move, or remove it, as needed.
-                    this.CT_CHUMAYBAYTableAdapter.Connection.ConnectionString = Program.connstr;
                     this.CT_CHUMAYBAYTableAdapter.Fill(this.DS.CT_CHUMAYBAY);
-
-                    // TODO: This line of code loads data into the 'dS.sp_DanhSachChuMayBay' table. You can move, or remove it, as needed.
-                    this.sp_DanhSachChuMayBayTableAdapter.Connection.ConnectionString = Program.connstr;
                     this.sp_DanhSachChuMayBayTableAdapter.Fill(this.DS.sp_DanhSachChuMayBay);
 
-                    bdsDOANHNGHIEP.Position = bdsDOANHNGHIEP.Find("maCaNhan", bdsDOANHNGHIEP);
                 }
             }
             if (bdsDOANHNGHIEP.Count == 0)
@@ -297,16 +271,8 @@ namespace Quan_Ly_May_Bay
         {
             try
             {
-                // TODO: This line of code loads data into the 'dS.DOANHNGHIEP' table. You can move, or remove it, as needed.
-                this.DOANHNGHIEPTableAdapter.Connection.ConnectionString = Program.connstr;
                 this.DOANHNGHIEPTableAdapter.Fill(this.DS.DOANHNGHIEP);
-
-                // TODO: This line of code loads data into the 'DS.CT_CHUMAYBAY' table. You can move, or remove it, as needed.
-                this.CT_CHUMAYBAYTableAdapter.Connection.ConnectionString = Program.connstr;
                 this.CT_CHUMAYBAYTableAdapter.Fill(this.DS.CT_CHUMAYBAY);
-
-                // TODO: This line of code loads data into the 'dS.sp_DanhSachChuMayBay' table. You can move, or remove it, as needed.
-                this.sp_DanhSachChuMayBayTableAdapter.Connection.ConnectionString = Program.connstr;
                 this.sp_DanhSachChuMayBayTableAdapter.Fill(this.DS.sp_DanhSachChuMayBay);
             }
             catch (Exception ex)
@@ -326,37 +292,66 @@ namespace Quan_Ly_May_Bay
             else
                 return;
 
-
-
-
-            if (maMayBay != "")
+            try
             {
-                try
-                {
-                    TruyVanNhanh($"INSERT INTO CT_CHUMAYBAY VALUES('{maCaNhan}', '{maMayBay}', GETDATE())");
-                    MessageBox.Show("Thêm máy bay sỡ hữu thành công!", "", MessageBoxButtons.OK);
-
-
-                    // TODO: This line of code loads data into the 'DS.CT_CHUMAYBAY' table. You can move, or remove it, as needed.
-                    this.CT_CHUMAYBAYTableAdapter.Connection.ConnectionString = Program.connstr;
-                    this.CT_CHUMAYBAYTableAdapter.Fill(this.DS.CT_CHUMAYBAY);
-
-                    // TODO: This line of code loads data into the 'dS.sp_DanhSachChuMayBay' table. You can move, or remove it, as needed.
-                    this.sp_DanhSachChuMayBayTableAdapter.Connection.ConnectionString = Program.connstr;
-                    this.sp_DanhSachChuMayBayTableAdapter.Fill(this.DS.sp_DanhSachChuMayBay);
-
-                    bdsDOANHNGHIEP.Position = bdsDOANHNGHIEP.Find("OWNER_ID", maCaNhan);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"{ex}", "", MessageBoxButtons.OK);
-                }
+                TruyVanNhanh($"INSERT INTO CT_CHUMAYBAY VALUES('{maCaNhan}', '{maMayBay}', GETDATE())");
+                MessageBox.Show("Thêm máy bay sỡ hữu thành công!", "", MessageBoxButtons.OK);
+                this.CT_CHUMAYBAYTableAdapter.Fill(this.DS.CT_CHUMAYBAY);
+                this.sp_DanhSachChuMayBayTableAdapter.Fill(this.DS.sp_DanhSachChuMayBay);
+                bdsDOANHNGHIEP.Position = bdsDOANHNGHIEP.Find("OWNER_ID", maCaNhan);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"{ex}", "", MessageBoxButtons.OK);
             }
         }
 
         private void btnThoat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             this.Dispose();
+        }
+
+        private void btnHienTaiSoHuu_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            gcDSMAYBAY.Visible = true;
+            gcCT_CHUMAYBAY.Visible = false;
+        }
+
+        private void btnLichSuSoHuu_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            gcDSMAYBAY.Visible = false;
+            gcCT_CHUMAYBAY.Visible = true;
+        }
+
+        private void gvDSMAYBAY_RowCellClick(object sender, DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs e)
+        {
+            gcDSMAYBAY.ContextMenuStrip = cmsChucNang;
+        }
+
+        private void tsmiXoa_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có thật sự muốn xóa máy bay sở hữu này", "Xác nhận", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            {
+                string ownerId = txtOWNER_ID.Text;
+                string idMayBay = ((DataRowView)bdsDSMAYBAY[bdsDSMAYBAY.Position])["IDMAYBAY"].ToString();
+                string ngayBatDau = ((DataRowView)bdsDSMAYBAY[bdsDSMAYBAY.Position])["NGAYBATDAU"].ToString();
+
+                string lenh = $"DELETE FROM CT_CHUMAYBAY WHERE OWNER_ID = '{ownerId}' AND IDMAYBAY = '{idMayBay}' AND NGAYBATDAU = '{ngayBatDau}'";
+
+                if (Program.ExecSqlNonQuery(lenh) != 0)
+                {
+                    MessageBox.Show("Lỗi xóa máy bay. Bạn hãy xem lại\n", "Thông báo", MessageBoxButtons.OK);
+                    return;
+                }
+                this.CT_CHUMAYBAYTableAdapter.Fill(this.DS.CT_CHUMAYBAY);
+                this.sp_DanhSachChuMayBayTableAdapter.Fill(this.DS.sp_DanhSachChuMayBay);
+            }
+        }
+
+        private void tsmiReload_Click(object sender, EventArgs e)
+        {
+            this.CT_CHUMAYBAYTableAdapter.Fill(this.DS.CT_CHUMAYBAY);
+            this.sp_DanhSachChuMayBayTableAdapter.Fill(this.DS.sp_DanhSachChuMayBay);
         }
     }
 }

@@ -200,6 +200,7 @@
             this.btnDoanhNghiep.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDoanhNghiep.ImageOptions.Image")));
             this.btnDoanhNghiep.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDoanhNghiep.ImageOptions.LargeImage")));
             this.btnDoanhNghiep.Name = "btnDoanhNghiep";
+            this.btnDoanhNghiep.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDoanhNghiep_ItemClick);
             // 
             // ribTaiKhoan
             // 
