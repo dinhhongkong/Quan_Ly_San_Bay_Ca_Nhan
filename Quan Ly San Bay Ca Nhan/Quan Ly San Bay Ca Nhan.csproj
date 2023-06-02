@@ -84,6 +84,12 @@
     <Compile Include="FormDangNhap.Designer.cs">
       <DependentUpon>FormDangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormDoanhNghiep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDoanhNghiep.Designer.cs">
+      <DependentUpon>FormDoanhNghiep.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormKho.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +152,12 @@
     <Compile Include="SubForm\FormChonNhanVien.Designer.cs">
       <DependentUpon>FormChonNhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="SubForm\FormLocMayBaySoHuu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\FormLocMayBaySoHuu.Designer.cs">
+      <DependentUpon>FormLocMayBaySoHuu.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormCaNhan.resx">
       <DependentUpon>FormCaNhan.cs</DependentUpon>
     </EmbeddedResource>
@@ -154,6 +166,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormDangNhap.resx">
       <DependentUpon>FormDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDoanhNghiep.resx">
+      <DependentUpon>FormDoanhNghiep.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormKho.resx">
       <DependentUpon>FormKho.cs</DependentUpon>
@@ -195,6 +210,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SubForm\FormChonNhanVien.resx">
       <DependentUpon>FormChonNhanVien.cs</DependentUpon>
+    </EmbeddedResource>  
+    <EmbeddedResource Include="SubForm\FormLocMayBaySoHuu.resx">
+      <DependentUpon>FormLocMayBaySoHuu.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
     <None Include="DS.xsc">

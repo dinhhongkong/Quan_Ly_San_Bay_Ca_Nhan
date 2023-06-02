@@ -1,11 +1,11 @@
 USE [QL_SANBAY_CN]
 GO
-/****** Object:  StoredProcedure [dbo].[sp_DanhSachCaNhan]    Script Date: 5/26/2023 3:27:01 PM ******/
+/****** Object:  StoredProcedure [dbo].[sp_DanhSachCaNhan]    Script Date: 6/1/2023 12:28:42 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-ALTER PROC [dbo].[sp_DanhSachCaNhan]
+CREATE PROC [dbo].[sp_DanhSachCaNhan]
 AS
 SELECT OWNER_ID, N.IDNGUOI, CMND, TEN, DIACHI, SDT
 FROM CANHAN C
