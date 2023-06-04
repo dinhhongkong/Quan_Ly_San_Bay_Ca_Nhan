@@ -125,3 +125,6 @@ C:\Users\KongDinh\Documents\Project\Winform\Quan_Ly_San_Bay_Ca_Nhan\Quan Ly San 
 C:\Users\KongDinh\Documents\Project\Winform\Quan_Ly_San_Bay_Ca_Nhan\Quan Ly San Bay Ca Nhan\obj\Debug\Quan_Ly_May_Bay.FormCTPhieuBaoTri.resources
 C:\Users\KongDinh\Documents\Project\Winform\Quan_Ly_San_Bay_Ca_Nhan\Quan Ly San Bay Ca Nhan\obj\Debug\Quan_Ly_May_Bay.FormDoanhNghiep.resources
 C:\Users\KongDinh\Documents\Project\Winform\Quan_Ly_San_Bay_Ca_Nhan\Quan Ly San Bay Ca Nhan\obj\Debug\Quan_Ly_May_Bay.SubForm.FormLocMayBaySoHuu.resources
+C:\Users\KongDinh\Documents\Project\Winform\Quan_Ly_San_Bay_Ca_Nhan\Quan Ly San Bay Ca Nhan\obj\Debug\Quan_Ly_May_Bay.FormPhiCong.resources
+C:\Users\KongDinh\Documents\Project\Winform\Quan_Ly_San_Bay_Ca_Nhan\Quan Ly San Bay Ca Nhan\obj\Debug\Quan_Ly_May_Bay.FormTaoTaiKhoan.resources
+C:\Users\KongDinh\Documents\Project\Winform\Quan_Ly_San_Bay_Ca_Nhan\Quan Ly San Bay Ca Nhan\obj\Debug\Quan_Ly_May_Bay.SubForm.FormDSNhanVien.resources

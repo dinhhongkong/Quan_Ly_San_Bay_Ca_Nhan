@@ -38,6 +38,7 @@ namespace Quan_Ly_May_Bay
                 ribDanhMuc.Visible = true;
                 ribNhanVien.Visible = true;
                 btnTaoTk.Enabled = true;
+                ribSaoLuu.Visible = true; 
             }
             else
             {
@@ -72,6 +73,7 @@ namespace Quan_Ly_May_Bay
             ribDanhMuc.Visible = false;
             ribNhanVien.Visible = false;
             ribBaoTri.Visible = false;
+            ribSaoLuu.Visible = false;
             btnDangXuat.Enabled = false;
             btnTaoTk.Enabled = false;
         }
@@ -170,6 +172,36 @@ namespace Quan_Ly_May_Bay
                 frmDoanhNghiep.MdiParent = this;
                 frmDoanhNghiep.Show();
             }
+        }
+
+        private void btnTaoTk_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = this.CheckExists(typeof(FormTaoTaiKhoan));
+            if (frm != null) frm.Activate();
+            else
+            {
+                FormTaoTaiKhoan frmTaoTaiKhoan = new FormTaoTaiKhoan();
+                frmTaoTaiKhoan.MdiParent = this;
+                frmTaoTaiKhoan.Show();
+            }
+
+        }
+
+        private void btnPhiCong_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = this.CheckExists(typeof(FormPhiCong));
+            if (frm != null) frm.Activate();
+            else
+            {
+                FormPhiCong frmPhiCong = new FormPhiCong();
+                frmPhiCong.MdiParent = this;
+                frmPhiCong.Show();
+            }
+        }
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
