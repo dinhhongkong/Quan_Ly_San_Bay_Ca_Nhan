@@ -41,9 +41,9 @@
     <Reference Include="DevExpress.Sparkline.v22.2.Core" />
     <Reference Include="DevExpress.XtraEditors.v22.2" />
     <Reference Include="DevExpress.Drawing.v22.2" />
-    <Reference Include="DevExpress.XtraGrid.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraLayout.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraPrinting.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v22.2, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v22.2, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v22.2, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll</HintPath>
     </Reference>
@@ -61,7 +61,7 @@
     <Compile Include="DS.cs">
       <DependentUpon>DS.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DS1.Designer.cs">
+    <Compile Include="DS.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DS.xsd</DependentUpon>
@@ -126,11 +126,23 @@
     <Compile Include="FormNVBaoTri.Designer.cs">
       <DependentUpon>FormNVBaoTri.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormPhiCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPhiCong.Designer.cs">
+      <DependentUpon>FormPhiCong.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormPhieuBaoTri.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormPhieuBaoTri.Designer.cs">
       <DependentUpon>FormPhieuBaoTri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTaoTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTaoTaiKhoan.Designer.cs">
+      <DependentUpon>FormTaoTaiKhoan.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -151,6 +163,12 @@
     </Compile>
     <Compile Include="SubForm\FormChonNhanVien.Designer.cs">
       <DependentUpon>FormChonNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\FormDSNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\FormDSNhanVien.Designer.cs">
+      <DependentUpon>FormDSNhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="SubForm\FormLocMayBaySoHuu.cs">
       <SubType>Form</SubType>
@@ -188,8 +206,14 @@
     <EmbeddedResource Include="FormNVBaoTri.resx">
       <DependentUpon>FormNVBaoTri.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormPhiCong.resx">
+      <DependentUpon>FormPhiCong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormPhieuBaoTri.resx">
       <DependentUpon>FormPhieuBaoTri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTaoTaiKhoan.resx">
+      <DependentUpon>FormTaoTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -210,7 +234,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SubForm\FormChonNhanVien.resx">
       <DependentUpon>FormChonNhanVien.cs</DependentUpon>
-    </EmbeddedResource>  
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\FormDSNhanVien.resx">
+      <DependentUpon>FormDSNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SubForm\FormLocMayBaySoHuu.resx">
       <DependentUpon>FormLocMayBaySoHuu.cs</DependentUpon>
     </EmbeddedResource>
@@ -221,7 +248,7 @@
     <None Include="DS.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <SubType>Designer</SubType>
-      <LastGenOutput>DS1.Designer.cs</LastGenOutput>
+      <LastGenOutput>DS.Designer.cs</LastGenOutput>
     </None>
     <None Include="DS.xss">
       <DependentUpon>DS.xsd</DependentUpon>

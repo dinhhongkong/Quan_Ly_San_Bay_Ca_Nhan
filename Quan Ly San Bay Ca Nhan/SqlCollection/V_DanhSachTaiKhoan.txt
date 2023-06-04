@@ -1,0 +1,13 @@
+USE [QL_SANBAY_CN]
+GO
+CREATE VIEW V_DanhSachTaiKhoan
+AS
+SELECT        sp.name AS TenDangNhap, dp.name AS MaNhanVien, rm_1.role AS Quyen
+FROM            sys.database_principals AS dp INNER JOIN
+                         sys.server_principals AS sp ON dp.sid = sp.sid INNER JOIN
+                             (SELECT        p.name AS role, m.name AS Users
+                               FROM            sys.database_role_members AS rm INNER JOIN
+                                                         sys.database_principals AS p ON rm.role_principal_id = p.principal_id INNER JOIN
+                                                         sys.database_principals AS m ON rm.member_principal_id = m.principal_id
+                               WHERE        (m.name <> 'dbo')) AS rm_1 ON dp.name = rm_1.Users
+WHERE        (sp.name <> 'sa')
