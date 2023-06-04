@@ -201,6 +201,7 @@ namespace Quan_Ly_May_Bay
             btnHieuChinh.Enabled = false;
             btnReload.Enabled = false;
             gcDSNVBaoTri.Enabled = false;
+            chkTrangThaiNghi.Checked = false;
             trangThai = TrangThai.THEM;
         }
 

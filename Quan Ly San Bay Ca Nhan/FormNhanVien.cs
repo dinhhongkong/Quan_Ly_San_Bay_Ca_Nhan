@@ -152,6 +152,7 @@ namespace Quan_Ly_May_Bay
             btnReload.Enabled = false;
             btnGhi.Enabled = true;
             gcNhanVien.Enabled = false;
+            chkTrangThaiNghi.Checked = false;
             trangThai = TrangThai.THEM;
         }
 
