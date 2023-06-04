@@ -1,0 +1,18 @@
+USE [QL_SANBAY_CN]
+GO
+
+CREATE PROC sp_CapNhatPhiCong(
+	@IDNGUOI int
+	, @CMND varchar(13)
+	, @Ten nvarchar(50)
+	, @Diachi nvarchar(100) 
+	, @SDT varchar(13)
+	, @IDNHANVIEN int
+	, @TrangThaiNghi bit)
+AS
+BEGIN
+	BEGIN TRANSACTION
+		UPDATE NGUOI SET CMND=@CMND, TEN=@Ten, DIACHI=@Diachi, SDT=@SDT WHERE IDNGUOI=@IDNGUOI
+		UPDATE NHANVIEN SET TRANGTHAINGHI=@TrangThaiNghi WHERE IDNHANVIEN=@IDNHANVIEN
+	COMMIT
+END
