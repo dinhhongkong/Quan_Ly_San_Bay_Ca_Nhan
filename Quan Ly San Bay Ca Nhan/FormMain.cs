@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.XtraReports.UI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -199,9 +200,27 @@ namespace Quan_Ly_May_Bay
             }
         }
 
-        private void FormMain_Load(object sender, EventArgs e)
+        private void btnBaoCaoMB_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+            Form frm = this.CheckExists(typeof(FormBaoCaoBaoTri));
+            if (frm != null) frm.Activate();
+            else
+            {
+                FormBaoCaoBaoTri frmBaoCaoBaoTri = new FormBaoCaoBaoTri();
+                frmBaoCaoBaoTri.MdiParent = this;
+                frmBaoCaoBaoTri.Show();
+            }
+        }
 
+        private void btnBaoCaoKho_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            /*XrptCaoCaoKhoConTrong rpt = new XrptCaoCaoKhoConTrong();
+
+            rpt.lblThoiGian.Text = DateTime.Now.ToString("dd/MM/yyyy, hh:mm:ss tt");
+            rpt.lblMaNV.Text = Program.userName;
+            rpt.lblHoTenNV.Text = Program.mHoten;
+            ReportPrintTool print = new ReportPrintTool(rpt);
+            print.ShowPreviewDialog();*/
         }
     }
 }
