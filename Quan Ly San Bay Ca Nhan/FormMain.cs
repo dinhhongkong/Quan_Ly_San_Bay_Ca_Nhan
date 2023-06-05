@@ -214,13 +214,13 @@ namespace Quan_Ly_May_Bay
 
         private void btnBaoCaoKho_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            /*XrptCaoCaoKhoConTrong rpt = new XrptCaoCaoKhoConTrong();
+            XrptCaoCaoKhoConTrong rpt = new XrptCaoCaoKhoConTrong();
 
             rpt.lblThoiGian.Text = DateTime.Now.ToString("dd/MM/yyyy, hh:mm:ss tt");
             rpt.lblMaNV.Text = Program.userName;
             rpt.lblHoTenNV.Text = Program.mHoten;
             ReportPrintTool print = new ReportPrintTool(rpt);
-            print.ShowPreviewDialog();*/
+            print.ShowPreviewDialog();
         }
     }
 }

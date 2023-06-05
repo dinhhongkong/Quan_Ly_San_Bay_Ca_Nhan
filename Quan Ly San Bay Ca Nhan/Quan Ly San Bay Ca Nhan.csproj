@@ -205,11 +205,11 @@
     <EmbeddedResource Include="FormBaoCaoBaoTri.resx">
       <DependentUpon>FormBaoCaoBaoTri.cs</DependentUpon>
     </EmbeddedResource>
-    <Compile Include="Xrpt_CaoCaoKhoConTrong.cs">
+    <Compile Include="XrptCaoCaoKhoConTrong.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Xrpt_CaoCaoKhoConTrong.Designer.cs">
-      <DependentUpon>Xrpt_CaoCaoKhoConTrong.cs</DependentUpon>
+    <Compile Include="XrptCaoCaoKhoConTrong.Designer.cs">
+      <DependentUpon>XrptCaoCaoKhoConTrong.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="FormCaNhan.resx">
       <DependentUpon>FormCaNhan.cs</DependentUpon>
@@ -279,8 +279,8 @@
     <EmbeddedResource Include="XrptBaoCaoMayBayBaoTri.resx">
       <DependentUpon>XrptBaoCaoMayBayBaoTri.cs</DependentUpon>
       </EmbeddedResource>
-    <EmbeddedResource Include="Xrpt_CaoCaoKhoConTrong.resx">
-      <DependentUpon>Xrpt_CaoCaoKhoConTrong.cs</DependentUpon>
+    <EmbeddedResource Include="XrptCaoCaoKhoConTrong.resx">
+      <DependentUpon>XrptCaoCaoKhoConTrong.cs</DependentUpon>
     </EmbeddedResource>
 
     
