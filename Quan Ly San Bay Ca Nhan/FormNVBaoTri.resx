@@ -276,7 +276,7 @@
         Pgs=
 </value>
   </data>
-  <data name="btnPhucHoi.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnHuy.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABF0RVh0VGl0
         bGUAVW5kbztSZXNldDutJQaQAAAA10lEQVQ4T6XSMYoCMRTG8VmURQsRiwVLxYt4AQ/gITyBnbVgvcWC
@@ -286,7 +286,7 @@
         kC5nj1YAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btnPhucHoi.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnHuy.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABF0RVh0VGl0
         bGUAVW5kbztSZXNldDutJQaQAAABXElEQVRYR8XRPUpDURDF8WhhL7gMd6ASUBFB3ILYaRcbbexEEImV

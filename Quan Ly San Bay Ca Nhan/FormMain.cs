@@ -222,5 +222,29 @@ namespace Quan_Ly_May_Bay
             ReportPrintTool print = new ReportPrintTool(rpt);
             print.ShowPreviewDialog();
         }
+
+        private void btnSaoLuu_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = this.CheckExists(typeof(FormBackup));
+            if (frm != null) frm.Activate();
+            else
+            {
+                FormBackup frmBackup = new FormBackup();
+                frmBackup.MdiParent = this;
+                frmBackup.Show();
+            }
+        }
+
+        private void btnPhucHoi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = this.CheckExists(typeof(FormRestore));
+            if (frm != null) frm.Activate();
+            else
+            {
+                FormRestore frmRestore = new FormRestore();
+                frmRestore.MdiParent = this;
+                frmRestore.Show();
+            }
+        }
     }
 }

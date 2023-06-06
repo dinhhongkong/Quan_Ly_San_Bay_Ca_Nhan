@@ -45,7 +45,14 @@ namespace Quan_Ly_May_Bay
 
             //Console.WriteLine(path);
             
-            Program.ExecSqlNonQuery($"Exec sp_Backup '{path}'");
+            if (Program.ExecSqlNonQuery($"Exec sp_Backup '{path}'") == 0)
+            {
+                MessageBox.Show("Sao lưu thành công", "Thông báo", MessageBoxButtons.OK);
+            }
+            else
+            {
+                MessageBox.Show("Sao lưu thất bại, vui lòng kiểm tra lại", "Thông báo", MessageBoxButtons.OK);
+            }
 
         }
     }

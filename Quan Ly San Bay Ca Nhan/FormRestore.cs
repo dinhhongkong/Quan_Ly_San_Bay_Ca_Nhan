@@ -42,10 +42,19 @@ namespace Quan_Ly_May_Bay
             string path = @txtFilePath.Text;
             Console.WriteLine(path);
             
-            Program.ExecSqlNonQuery("USE [master]\n" +
+            int ketQua = Program.ExecSqlNonQuery("USE [master]\n" +
                 "ALTER DATABASE [QL_SANBAY_CN] SET OFFLINE WITH ROLLBACK IMMEDIATE\n" +
                 $"RESTORE DATABASE [QL_SANBAY_CN] FROM DISK = '{path}' WITH REPLACE\n" +
                 "ALTER DATABASE [QL_SANBAY_CN] SET ONLINE");
+
+            if (ketQua == 0)
+            {
+                MessageBox.Show("Phục hồi thành công", "Thông báo", MessageBoxButtons.OK);
+            }
+            else
+            {
+                MessageBox.Show("Phục hồi thất bại, vui lòng kiểm tra lại", "Thông báo", MessageBoxButtons.OK);
+            }
         }
     }
 }

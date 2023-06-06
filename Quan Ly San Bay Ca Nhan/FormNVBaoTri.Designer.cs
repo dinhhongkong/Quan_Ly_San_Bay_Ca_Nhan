@@ -283,8 +283,8 @@
             // 
             this.btnHuy.Caption = "Hủy";
             this.btnHuy.Id = 9;
-            this.btnHuy.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnPhucHoi.ImageOptions.Image")));
-            this.btnHuy.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnPhucHoi.ImageOptions.LargeImage")));
+            this.btnHuy.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnHuy.ImageOptions.Image")));
+            this.btnHuy.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnHuy.ImageOptions.LargeImage")));
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.btnHuy.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnHuy_ItemClick);
@@ -646,6 +646,11 @@
             this.nudLuong.Properties.Appearance.Options.UseFont = true;
             this.nudLuong.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.nudLuong.Properties.Increment = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
             this.nudLuong.Properties.IsFloatValue = false;
             this.nudLuong.Properties.MaskSettings.Set("mask", "N00");
             this.nudLuong.Properties.ReadOnly = true;
