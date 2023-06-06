@@ -223,6 +223,7 @@
             this.btnBaoCaoMB.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnBaoCaoMB.ImageOptions.Image")));
             this.btnBaoCaoMB.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnBaoCaoMB.ImageOptions.LargeImage")));
             this.btnBaoCaoMB.Name = "btnBaoCaoMB";
+            this.btnBaoCaoMB.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnBaoCaoMB_ItemClick);
             // 
             // btnBaoCaoKho
             // 
@@ -231,6 +232,7 @@
             this.btnBaoCaoKho.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnBaoCaoKho.ImageOptions.Image")));
             this.btnBaoCaoKho.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnBaoCaoKho.ImageOptions.LargeImage")));
             this.btnBaoCaoKho.Name = "btnBaoCaoKho";
+            this.btnBaoCaoKho.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnBaoCaoKho_ItemClick);
             // 
             // btnSaoLuu
             // 
@@ -381,7 +383,6 @@
             this.Ribbon = this.ribbonControl1;
             this.Text = "Quản lý sân bay cá nhân";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.FormMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
