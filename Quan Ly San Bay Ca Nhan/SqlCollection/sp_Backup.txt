@@ -1,0 +1,11 @@
+USE [QL_SANBAY_CN]
+GO
+
+CREATE PROC sp_Backup(
+	@filepath nvarchar(max))
+AS
+BEGIN
+	BACKUP DATABASE [QL_SANBAY_CN]
+	TO DISK = @filepath;
+END
+

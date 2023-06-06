@@ -41,9 +41,9 @@
     <Reference Include="DevExpress.Sparkline.v22.2.Core" />
     <Reference Include="DevExpress.XtraEditors.v22.2" />
     <Reference Include="DevExpress.Drawing.v22.2" />
-    <Reference Include="DevExpress.XtraGrid.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraLayout.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraPrinting.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v22.2, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v22.2, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v22.2, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll</HintPath>
     </Reference>
@@ -65,6 +65,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FormBackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBackup.Designer.cs">
+      <DependentUpon>FormBackup.cs</DependentUpon>
     </Compile>
     <Compile Include="FormCaNhan.cs">
       <SubType>Form</SubType>
@@ -138,6 +144,12 @@
     <Compile Include="FormPhieuBaoTri.Designer.cs">
       <DependentUpon>FormPhieuBaoTri.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormRestore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRestore.Designer.cs">
+      <DependentUpon>FormRestore.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormTaoTaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,6 +188,9 @@
     <Compile Include="SubForm\FormLocMayBaySoHuu.Designer.cs">
       <DependentUpon>FormLocMayBaySoHuu.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FormBackup.resx">
+      <DependentUpon>FormBackup.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCaNhan.resx">
       <DependentUpon>FormCaNhan.cs</DependentUpon>
     </EmbeddedResource>
@@ -211,6 +226,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormPhieuBaoTri.resx">
       <DependentUpon>FormPhieuBaoTri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRestore.resx">
+      <DependentUpon>FormRestore.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormTaoTaiKhoan.resx">
       <DependentUpon>FormTaoTaiKhoan.cs</DependentUpon>
