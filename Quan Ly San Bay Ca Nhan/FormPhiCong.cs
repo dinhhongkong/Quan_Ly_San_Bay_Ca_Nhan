@@ -246,7 +246,7 @@ namespace Quan_Ly_May_Bay
                     bdsDSPhiCong.Position = currPosDSPhiCong;
                 }
             }
-            catch (Exception ex)
+            catch (SqlException ex)
             {
                 MessageBox.Show($"{ex}", "", MessageBoxButtons.OK);
             }

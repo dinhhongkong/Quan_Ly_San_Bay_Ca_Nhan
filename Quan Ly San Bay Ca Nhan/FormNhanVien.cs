@@ -125,7 +125,7 @@ namespace Quan_Ly_May_Bay
         {
             try
             {
-                SqlDataReader myreader = Program.ExecSqlDataReader("SELECT IDENT_CURRENT('NHANVIEN') + 1 AS ID");
+                SqlDataReader myreader = Program.ExecSqlDataReader("select * from dbo.UDF_LAY_KHOA_CHINH_NHAN_VIEN()");
                 
                 
                 if (myreader.Read())

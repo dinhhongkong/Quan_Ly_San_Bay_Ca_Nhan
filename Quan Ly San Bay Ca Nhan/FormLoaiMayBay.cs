@@ -69,6 +69,26 @@ namespace Quan_Ly_May_Bay
                 MessageBox.Show("ID loại máy bay đã được sử dụng", "Thông báo", MessageBoxButtons.OK);
                 return false;
             }
+            if (string.IsNullOrEmpty(txtKieuDang.Text))
+            {
+                MessageBox.Show("Kiểu dáng loại máy bay không được bỏ trống", "Thông báo", MessageBoxButtons.OK);
+                return false;
+            }
+            if (txtKieuDang.Text.Length > 50)
+            {
+                MessageBox.Show("Kiểu dáng loại máy bay không được dài quá 50 kí tự", "Thông báo", MessageBoxButtons.OK);
+                return false;
+            }
+            if (nudSucChua.Value  == 0)
+            {
+                MessageBox.Show("Sức chứa không được bằng 0", "Thông báo", MessageBoxButtons.OK);
+                return false;
+            }
+            if ( nudTrongLuong.Value == 0 )
+            {
+                MessageBox.Show("Trọng lượng máy bay không được bằng 0", "Thông báo", MessageBoxButtons.OK);
+                return false;
+            }
             return true;
         }
 
@@ -196,6 +216,11 @@ namespace Quan_Ly_May_Bay
             btnGhi.Enabled = false;
             txtIDLoai.Enabled = true;
             trangThai = TrangThai.NONE;
+        }
+
+        private void gcChucNang_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

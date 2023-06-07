@@ -72,35 +72,35 @@ namespace Quan_Ly_May_Bay {
         
         private V_DanhSachTaiKhoanDataTable tableV_DanhSachTaiKhoan;
         
-        private global::System.Data.DataRelation relationFK_CANHAN_NGUOI;
-        
         private global::System.Data.DataRelation relationFK_CANHAN_CHUMAYBAY;
         
-        private global::System.Data.DataRelation relationFK_CT_BANGLAI_LOAIMAYBAY;
+        private global::System.Data.DataRelation relationFK_CANHAN_NGUOI;
         
         private global::System.Data.DataRelation relationFK_CT_BANGLAI_PHICONG;
         
-        private global::System.Data.DataRelation relationFK_CT_CHUMAYBAY_MAYBAY;
-        
-        private global::System.Data.DataRelation relationFK_CT_CHUMAYBAY_CHUMAYBAY;
-        
-        private global::System.Data.DataRelation relationFK_sp_DanhSachCaNhan_CT_CHUMAYBAY;
+        private global::System.Data.DataRelation relationFK_CT_BANGLAI_LOAIMAYBAY;
         
         private global::System.Data.DataRelation relationFK_DOANHNGHIEP_CT_CHUMAYBAY;
         
-        private global::System.Data.DataRelation relationFK_CT_KHO_MAYBAY;
+        private global::System.Data.DataRelation relationFK_sp_DanhSachCaNhan_CT_CHUMAYBAY;
+        
+        private global::System.Data.DataRelation relationFK_CT_CHUMAYBAY_CHUMAYBAY;
+        
+        private global::System.Data.DataRelation relationFK_CT_CHUMAYBAY_MAYBAY;
         
         private global::System.Data.DataRelation relationFK_CT_KHO_KHO;
         
-        private global::System.Data.DataRelation relationFK_sp_DanhSachNhanVienBaoTri_CT_NVBAOTRI;
-        
-        private global::System.Data.DataRelation relationFK_CT_NVBAOTRI_NHANVIEN;
+        private global::System.Data.DataRelation relationFK_CT_KHO_MAYBAY;
         
         private global::System.Data.DataRelation relationFK_CT_NVBAOTRI_LOAIMAYBAY;
         
-        private global::System.Data.DataRelation relationFK_CT_PHIEUBAOTRI_PHIEUBAOTRI;
+        private global::System.Data.DataRelation relationFK_CT_NVBAOTRI_NHANVIEN;
+        
+        private global::System.Data.DataRelation relationFK_sp_DanhSachNhanVienBaoTri_CT_NVBAOTRI;
         
         private global::System.Data.DataRelation relationFK_CT_PHIEUBAOTRI_NHANVIEN1;
+        
+        private global::System.Data.DataRelation relationFK_CT_PHIEUBAOTRI_PHIEUBAOTRI;
         
         private global::System.Data.DataRelation relationFK_DOANHNGHIEP_CHUMAYBAY;
         
@@ -108,25 +108,25 @@ namespace Quan_Ly_May_Bay {
         
         private global::System.Data.DataRelation relationFK_sp_DanhSachCaNhan_NGUOI;
         
-        private global::System.Data.DataRelation relationFK_NHANVIEN_NGUOI;
-        
         private global::System.Data.DataRelation relationFK_sp_DanhSachNhanVien_NHANVIEN;
         
-        private global::System.Data.DataRelation relationFK_PHIEUBAOTRI_NHANVIEN1;
+        private global::System.Data.DataRelation relationFK_NHANVIEN_NGUOI;
         
         private global::System.Data.DataRelation relationFK_PHIEUBAOTRI_MAYBAY;
         
-        private global::System.Data.DataRelation relationFK_sp_DanhSachCaNhan_sp_DanhSachChuMayBay;
+        private global::System.Data.DataRelation relationFK_PHIEUBAOTRI_NHANVIEN1;
         
         private global::System.Data.DataRelation relationFK_DOANHNGHIEP_sp_DanhSachChuMayBay;
+        
+        private global::System.Data.DataRelation relationFK_sp_DanhSachCaNhan_sp_DanhSachChuMayBay;
         
         private global::System.Data.DataRelation relationFK_PHICONG_NHANVIEN;
         
         private global::System.Data.DataRelation relationFK_NHANVIEN_sp_DanhSachPhiCong;
         
-        private global::System.Data.DataRelation relationFK_LOAIMAYBAY_sp_CT_BangLai;
-        
         private global::System.Data.DataRelation relationFK_sp_DanhSachPhiCong_sp_CT_BangLai;
+        
+        private global::System.Data.DataRelation relationFK_LOAIMAYBAY_sp_CT_BangLai;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -802,34 +802,34 @@ namespace Quan_Ly_May_Bay {
                     this.tableV_DanhSachTaiKhoan.InitVars();
                 }
             }
-            this.relationFK_CANHAN_NGUOI = this.Relations["FK_CANHAN_NGUOI"];
             this.relationFK_CANHAN_CHUMAYBAY = this.Relations["FK_CANHAN_CHUMAYBAY"];
-            this.relationFK_CT_BANGLAI_LOAIMAYBAY = this.Relations["FK_CT_BANGLAI_LOAIMAYBAY"];
+            this.relationFK_CANHAN_NGUOI = this.Relations["FK_CANHAN_NGUOI"];
             this.relationFK_CT_BANGLAI_PHICONG = this.Relations["FK_CT_BANGLAI_PHICONG"];
-            this.relationFK_CT_CHUMAYBAY_MAYBAY = this.Relations["FK_CT_CHUMAYBAY_MAYBAY"];
-            this.relationFK_CT_CHUMAYBAY_CHUMAYBAY = this.Relations["FK_CT_CHUMAYBAY_CHUMAYBAY"];
-            this.relationFK_sp_DanhSachCaNhan_CT_CHUMAYBAY = this.Relations["FK_sp_DanhSachCaNhan_CT_CHUMAYBAY"];
+            this.relationFK_CT_BANGLAI_LOAIMAYBAY = this.Relations["FK_CT_BANGLAI_LOAIMAYBAY"];
             this.relationFK_DOANHNGHIEP_CT_CHUMAYBAY = this.Relations["FK_DOANHNGHIEP_CT_CHUMAYBAY"];
-            this.relationFK_CT_KHO_MAYBAY = this.Relations["FK_CT_KHO_MAYBAY"];
+            this.relationFK_sp_DanhSachCaNhan_CT_CHUMAYBAY = this.Relations["FK_sp_DanhSachCaNhan_CT_CHUMAYBAY"];
+            this.relationFK_CT_CHUMAYBAY_CHUMAYBAY = this.Relations["FK_CT_CHUMAYBAY_CHUMAYBAY"];
+            this.relationFK_CT_CHUMAYBAY_MAYBAY = this.Relations["FK_CT_CHUMAYBAY_MAYBAY"];
             this.relationFK_CT_KHO_KHO = this.Relations["FK_CT_KHO_KHO"];
-            this.relationFK_sp_DanhSachNhanVienBaoTri_CT_NVBAOTRI = this.Relations["FK_sp_DanhSachNhanVienBaoTri_CT_NVBAOTRI"];
-            this.relationFK_CT_NVBAOTRI_NHANVIEN = this.Relations["FK_CT_NVBAOTRI_NHANVIEN"];
+            this.relationFK_CT_KHO_MAYBAY = this.Relations["FK_CT_KHO_MAYBAY"];
             this.relationFK_CT_NVBAOTRI_LOAIMAYBAY = this.Relations["FK_CT_NVBAOTRI_LOAIMAYBAY"];
-            this.relationFK_CT_PHIEUBAOTRI_PHIEUBAOTRI = this.Relations["FK_CT_PHIEUBAOTRI_PHIEUBAOTRI"];
+            this.relationFK_CT_NVBAOTRI_NHANVIEN = this.Relations["FK_CT_NVBAOTRI_NHANVIEN"];
+            this.relationFK_sp_DanhSachNhanVienBaoTri_CT_NVBAOTRI = this.Relations["FK_sp_DanhSachNhanVienBaoTri_CT_NVBAOTRI"];
             this.relationFK_CT_PHIEUBAOTRI_NHANVIEN1 = this.Relations["FK_CT_PHIEUBAOTRI_NHANVIEN1"];
+            this.relationFK_CT_PHIEUBAOTRI_PHIEUBAOTRI = this.Relations["FK_CT_PHIEUBAOTRI_PHIEUBAOTRI"];
             this.relationFK_DOANHNGHIEP_CHUMAYBAY = this.Relations["FK_DOANHNGHIEP_CHUMAYBAY"];
             this.relationFK_MAYBAY_LOAIMAYBAY = this.Relations["FK_MAYBAY_LOAIMAYBAY"];
             this.relationFK_sp_DanhSachCaNhan_NGUOI = this.Relations["FK_sp_DanhSachCaNhan_NGUOI"];
-            this.relationFK_NHANVIEN_NGUOI = this.Relations["FK_NHANVIEN_NGUOI"];
             this.relationFK_sp_DanhSachNhanVien_NHANVIEN = this.Relations["FK_sp_DanhSachNhanVien_NHANVIEN"];
-            this.relationFK_PHIEUBAOTRI_NHANVIEN1 = this.Relations["FK_PHIEUBAOTRI_NHANVIEN1"];
+            this.relationFK_NHANVIEN_NGUOI = this.Relations["FK_NHANVIEN_NGUOI"];
             this.relationFK_PHIEUBAOTRI_MAYBAY = this.Relations["FK_PHIEUBAOTRI_MAYBAY"];
-            this.relationFK_sp_DanhSachCaNhan_sp_DanhSachChuMayBay = this.Relations["FK_sp_DanhSachCaNhan_sp_DanhSachChuMayBay"];
+            this.relationFK_PHIEUBAOTRI_NHANVIEN1 = this.Relations["FK_PHIEUBAOTRI_NHANVIEN1"];
             this.relationFK_DOANHNGHIEP_sp_DanhSachChuMayBay = this.Relations["FK_DOANHNGHIEP_sp_DanhSachChuMayBay"];
+            this.relationFK_sp_DanhSachCaNhan_sp_DanhSachChuMayBay = this.Relations["FK_sp_DanhSachCaNhan_sp_DanhSachChuMayBay"];
             this.relationFK_PHICONG_NHANVIEN = this.Relations["FK_PHICONG_NHANVIEN"];
             this.relationFK_NHANVIEN_sp_DanhSachPhiCong = this.Relations["FK_NHANVIEN_sp_DanhSachPhiCong"];
-            this.relationFK_LOAIMAYBAY_sp_CT_BangLai = this.Relations["FK_LOAIMAYBAY_sp_CT_BangLai"];
             this.relationFK_sp_DanhSachPhiCong_sp_CT_BangLai = this.Relations["FK_sp_DanhSachPhiCong_sp_CT_BangLai"];
+            this.relationFK_LOAIMAYBAY_sp_CT_BangLai = this.Relations["FK_LOAIMAYBAY_sp_CT_BangLai"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -889,6 +889,13 @@ namespace Quan_Ly_May_Bay {
             this.tableV_DanhSachTaiKhoan = new V_DanhSachTaiKhoanDataTable();
             base.Tables.Add(this.tableV_DanhSachTaiKhoan);
             global::System.Data.ForeignKeyConstraint fkc;
+            fkc = new global::System.Data.ForeignKeyConstraint("FK_CANHAN_CHUMAYBAY", new global::System.Data.DataColumn[] {
+                        this.tableCHUMAYBAY.OWNER_IDColumn}, new global::System.Data.DataColumn[] {
+                        this.tableCANHAN.OWNER_IDColumn});
+            this.tableCANHAN.Constraints.Add(fkc);
+            fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
+            fkc.DeleteRule = global::System.Data.Rule.None;
+            fkc.UpdateRule = global::System.Data.Rule.Cascade;
             fkc = new global::System.Data.ForeignKeyConstraint("FK_CANHAN_NGUOI", new global::System.Data.DataColumn[] {
                         this.tableNGUOI.IDNGUOIColumn}, new global::System.Data.DataColumn[] {
                         this.tableCANHAN.IDNGUOIColumn});
@@ -896,10 +903,10 @@ namespace Quan_Ly_May_Bay {
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.None;
             fkc.UpdateRule = global::System.Data.Rule.None;
-            fkc = new global::System.Data.ForeignKeyConstraint("FK_CANHAN_CHUMAYBAY", new global::System.Data.DataColumn[] {
-                        this.tableCHUMAYBAY.OWNER_IDColumn}, new global::System.Data.DataColumn[] {
-                        this.tableCANHAN.OWNER_IDColumn});
-            this.tableCANHAN.Constraints.Add(fkc);
+            fkc = new global::System.Data.ForeignKeyConstraint("FK_CT_BANGLAI_PHICONG", new global::System.Data.DataColumn[] {
+                        this.tablePHICONG.ID_BANGLAIColumn}, new global::System.Data.DataColumn[] {
+                        this.tableCT_BANGLAI.ID_BANGLAIColumn});
+            this.tableCT_BANGLAI.Constraints.Add(fkc);
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.None;
             fkc.UpdateRule = global::System.Data.Rule.Cascade;
@@ -910,16 +917,16 @@ namespace Quan_Ly_May_Bay {
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.None;
             fkc.UpdateRule = global::System.Data.Rule.Cascade;
-            fkc = new global::System.Data.ForeignKeyConstraint("FK_CT_BANGLAI_PHICONG", new global::System.Data.DataColumn[] {
-                        this.tablePHICONG.ID_BANGLAIColumn}, new global::System.Data.DataColumn[] {
-                        this.tableCT_BANGLAI.ID_BANGLAIColumn});
-            this.tableCT_BANGLAI.Constraints.Add(fkc);
+            fkc = new global::System.Data.ForeignKeyConstraint("FK_DOANHNGHIEP_CT_CHUMAYBAY", new global::System.Data.DataColumn[] {
+                        this.tableDOANHNGHIEP.OWNER_IDColumn}, new global::System.Data.DataColumn[] {
+                        this.tableCT_CHUMAYBAY.OWNER_IDColumn});
+            this.tableCT_CHUMAYBAY.Constraints.Add(fkc);
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.None;
-            fkc.UpdateRule = global::System.Data.Rule.Cascade;
-            fkc = new global::System.Data.ForeignKeyConstraint("FK_CT_CHUMAYBAY_MAYBAY", new global::System.Data.DataColumn[] {
-                        this.tableMAYBAY.IDMAYBAYColumn}, new global::System.Data.DataColumn[] {
-                        this.tableCT_CHUMAYBAY.IDMAYBAYColumn});
+            fkc.UpdateRule = global::System.Data.Rule.None;
+            fkc = new global::System.Data.ForeignKeyConstraint("FK_sp_DanhSachCaNhan_CT_CHUMAYBAY", new global::System.Data.DataColumn[] {
+                        this.tablesp_DanhSachCaNhan.OWNER_IDColumn}, new global::System.Data.DataColumn[] {
+                        this.tableCT_CHUMAYBAY.OWNER_IDColumn});
             this.tableCT_CHUMAYBAY.Constraints.Add(fkc);
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.None;
@@ -931,24 +938,10 @@ namespace Quan_Ly_May_Bay {
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.None;
             fkc.UpdateRule = global::System.Data.Rule.Cascade;
-            fkc = new global::System.Data.ForeignKeyConstraint("FK_sp_DanhSachCaNhan_CT_CHUMAYBAY", new global::System.Data.DataColumn[] {
-                        this.tablesp_DanhSachCaNhan.OWNER_IDColumn}, new global::System.Data.DataColumn[] {
-                        this.tableCT_CHUMAYBAY.OWNER_IDColumn});
-            this.tableCT_CHUMAYBAY.Constraints.Add(fkc);
-            fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
-            fkc.DeleteRule = global::System.Data.Rule.None;
-            fkc.UpdateRule = global::System.Data.Rule.Cascade;
-            fkc = new global::System.Data.ForeignKeyConstraint("FK_DOANHNGHIEP_CT_CHUMAYBAY", new global::System.Data.DataColumn[] {
-                        this.tableDOANHNGHIEP.OWNER_IDColumn}, new global::System.Data.DataColumn[] {
-                        this.tableCT_CHUMAYBAY.OWNER_IDColumn});
-            this.tableCT_CHUMAYBAY.Constraints.Add(fkc);
-            fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
-            fkc.DeleteRule = global::System.Data.Rule.None;
-            fkc.UpdateRule = global::System.Data.Rule.None;
-            fkc = new global::System.Data.ForeignKeyConstraint("FK_CT_KHO_MAYBAY", new global::System.Data.DataColumn[] {
+            fkc = new global::System.Data.ForeignKeyConstraint("FK_CT_CHUMAYBAY_MAYBAY", new global::System.Data.DataColumn[] {
                         this.tableMAYBAY.IDMAYBAYColumn}, new global::System.Data.DataColumn[] {
-                        this.tableCT_KHO.IDMAYBAYColumn});
-            this.tableCT_KHO.Constraints.Add(fkc);
+                        this.tableCT_CHUMAYBAY.IDMAYBAYColumn});
+            this.tableCT_CHUMAYBAY.Constraints.Add(fkc);
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.None;
             fkc.UpdateRule = global::System.Data.Rule.Cascade;
@@ -959,17 +952,10 @@ namespace Quan_Ly_May_Bay {
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.None;
             fkc.UpdateRule = global::System.Data.Rule.Cascade;
-            fkc = new global::System.Data.ForeignKeyConstraint("FK_sp_DanhSachNhanVienBaoTri_CT_NVBAOTRI", new global::System.Data.DataColumn[] {
-                        this.tablesp_DanhSachNhanVienBaoTri.IDNHANVIENColumn}, new global::System.Data.DataColumn[] {
-                        this.tableCT_NVBAOTRI.IDNHANVIENColumn});
-            this.tableCT_NVBAOTRI.Constraints.Add(fkc);
-            fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
-            fkc.DeleteRule = global::System.Data.Rule.None;
-            fkc.UpdateRule = global::System.Data.Rule.None;
-            fkc = new global::System.Data.ForeignKeyConstraint("FK_CT_NVBAOTRI_NHANVIEN", new global::System.Data.DataColumn[] {
-                        this.tableNHANVIEN.IDNHANVIENColumn}, new global::System.Data.DataColumn[] {
-                        this.tableCT_NVBAOTRI.IDNHANVIENColumn});
-            this.tableCT_NVBAOTRI.Constraints.Add(fkc);
+            fkc = new global::System.Data.ForeignKeyConstraint("FK_CT_KHO_MAYBAY", new global::System.Data.DataColumn[] {
+                        this.tableMAYBAY.IDMAYBAYColumn}, new global::System.Data.DataColumn[] {
+                        this.tableCT_KHO.IDMAYBAYColumn});
+            this.tableCT_KHO.Constraints.Add(fkc);
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.None;
             fkc.UpdateRule = global::System.Data.Rule.Cascade;
@@ -980,10 +966,17 @@ namespace Quan_Ly_May_Bay {
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.None;
             fkc.UpdateRule = global::System.Data.Rule.Cascade;
-            fkc = new global::System.Data.ForeignKeyConstraint("FK_CT_PHIEUBAOTRI_PHIEUBAOTRI", new global::System.Data.DataColumn[] {
-                        this.tablePHIEUBAOTRI.IDPHIEUColumn}, new global::System.Data.DataColumn[] {
-                        this.tableCT_PHIEUBAOTRI.IDPHIEUColumn});
-            this.tableCT_PHIEUBAOTRI.Constraints.Add(fkc);
+            fkc = new global::System.Data.ForeignKeyConstraint("FK_CT_NVBAOTRI_NHANVIEN", new global::System.Data.DataColumn[] {
+                        this.tableNHANVIEN.IDNHANVIENColumn}, new global::System.Data.DataColumn[] {
+                        this.tableCT_NVBAOTRI.IDNHANVIENColumn});
+            this.tableCT_NVBAOTRI.Constraints.Add(fkc);
+            fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
+            fkc.DeleteRule = global::System.Data.Rule.None;
+            fkc.UpdateRule = global::System.Data.Rule.Cascade;
+            fkc = new global::System.Data.ForeignKeyConstraint("FK_sp_DanhSachNhanVienBaoTri_CT_NVBAOTRI", new global::System.Data.DataColumn[] {
+                        this.tablesp_DanhSachNhanVienBaoTri.IDNHANVIENColumn}, new global::System.Data.DataColumn[] {
+                        this.tableCT_NVBAOTRI.IDNHANVIENColumn});
+            this.tableCT_NVBAOTRI.Constraints.Add(fkc);
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.None;
             fkc.UpdateRule = global::System.Data.Rule.None;
@@ -994,6 +987,13 @@ namespace Quan_Ly_May_Bay {
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.None;
             fkc.UpdateRule = global::System.Data.Rule.Cascade;
+            fkc = new global::System.Data.ForeignKeyConstraint("FK_CT_PHIEUBAOTRI_PHIEUBAOTRI", new global::System.Data.DataColumn[] {
+                        this.tablePHIEUBAOTRI.IDPHIEUColumn}, new global::System.Data.DataColumn[] {
+                        this.tableCT_PHIEUBAOTRI.IDPHIEUColumn});
+            this.tableCT_PHIEUBAOTRI.Constraints.Add(fkc);
+            fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
+            fkc.DeleteRule = global::System.Data.Rule.None;
+            fkc.UpdateRule = global::System.Data.Rule.None;
             fkc = new global::System.Data.ForeignKeyConstraint("FK_DOANHNGHIEP_CHUMAYBAY", new global::System.Data.DataColumn[] {
                         this.tableCHUMAYBAY.OWNER_IDColumn}, new global::System.Data.DataColumn[] {
                         this.tableDOANHNGHIEP.OWNER_IDColumn});
@@ -1015,13 +1015,6 @@ namespace Quan_Ly_May_Bay {
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.None;
             fkc.UpdateRule = global::System.Data.Rule.Cascade;
-            fkc = new global::System.Data.ForeignKeyConstraint("FK_NHANVIEN_NGUOI", new global::System.Data.DataColumn[] {
-                        this.tableNGUOI.IDNGUOIColumn}, new global::System.Data.DataColumn[] {
-                        this.tableNHANVIEN.IDNGUOIColumn});
-            this.tableNHANVIEN.Constraints.Add(fkc);
-            fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
-            fkc.DeleteRule = global::System.Data.Rule.None;
-            fkc.UpdateRule = global::System.Data.Rule.Cascade;
             fkc = new global::System.Data.ForeignKeyConstraint("FK_sp_DanhSachNhanVien_NHANVIEN", new global::System.Data.DataColumn[] {
                         this.tablesp_DanhSachNhanVien.IDNHANVIENColumn}, new global::System.Data.DataColumn[] {
                         this.tableNHANVIEN.IDNHANVIENColumn});
@@ -1029,10 +1022,10 @@ namespace Quan_Ly_May_Bay {
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.None;
             fkc.UpdateRule = global::System.Data.Rule.Cascade;
-            fkc = new global::System.Data.ForeignKeyConstraint("FK_PHIEUBAOTRI_NHANVIEN1", new global::System.Data.DataColumn[] {
-                        this.tableNHANVIEN.IDNHANVIENColumn}, new global::System.Data.DataColumn[] {
-                        this.tablePHIEUBAOTRI.IDNHANVIENColumn});
-            this.tablePHIEUBAOTRI.Constraints.Add(fkc);
+            fkc = new global::System.Data.ForeignKeyConstraint("FK_NHANVIEN_NGUOI", new global::System.Data.DataColumn[] {
+                        this.tableNGUOI.IDNGUOIColumn}, new global::System.Data.DataColumn[] {
+                        this.tableNHANVIEN.IDNGUOIColumn});
+            this.tableNHANVIEN.Constraints.Add(fkc);
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.None;
             fkc.UpdateRule = global::System.Data.Rule.Cascade;
@@ -1043,10 +1036,10 @@ namespace Quan_Ly_May_Bay {
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.None;
             fkc.UpdateRule = global::System.Data.Rule.Cascade;
-            fkc = new global::System.Data.ForeignKeyConstraint("FK_sp_DanhSachCaNhan_sp_DanhSachChuMayBay", new global::System.Data.DataColumn[] {
-                        this.tablesp_DanhSachCaNhan.OWNER_IDColumn}, new global::System.Data.DataColumn[] {
-                        this.tablesp_DanhSachChuMayBay.OWNER_IDColumn});
-            this.tablesp_DanhSachChuMayBay.Constraints.Add(fkc);
+            fkc = new global::System.Data.ForeignKeyConstraint("FK_PHIEUBAOTRI_NHANVIEN1", new global::System.Data.DataColumn[] {
+                        this.tableNHANVIEN.IDNHANVIENColumn}, new global::System.Data.DataColumn[] {
+                        this.tablePHIEUBAOTRI.IDNHANVIENColumn});
+            this.tablePHIEUBAOTRI.Constraints.Add(fkc);
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.None;
             fkc.UpdateRule = global::System.Data.Rule.Cascade;
@@ -1057,6 +1050,13 @@ namespace Quan_Ly_May_Bay {
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.None;
             fkc.UpdateRule = global::System.Data.Rule.None;
+            fkc = new global::System.Data.ForeignKeyConstraint("FK_sp_DanhSachCaNhan_sp_DanhSachChuMayBay", new global::System.Data.DataColumn[] {
+                        this.tablesp_DanhSachCaNhan.OWNER_IDColumn}, new global::System.Data.DataColumn[] {
+                        this.tablesp_DanhSachChuMayBay.OWNER_IDColumn});
+            this.tablesp_DanhSachChuMayBay.Constraints.Add(fkc);
+            fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
+            fkc.DeleteRule = global::System.Data.Rule.None;
+            fkc.UpdateRule = global::System.Data.Rule.Cascade;
             fkc = new global::System.Data.ForeignKeyConstraint("FK_PHICONG_NHANVIEN", new global::System.Data.DataColumn[] {
                         this.tableNHANVIEN.IDNHANVIENColumn}, new global::System.Data.DataColumn[] {
                         this.tablePHICONG.IDNHANVIENColumn});
@@ -1071,13 +1071,6 @@ namespace Quan_Ly_May_Bay {
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.None;
             fkc.UpdateRule = global::System.Data.Rule.Cascade;
-            fkc = new global::System.Data.ForeignKeyConstraint("FK_LOAIMAYBAY_sp_CT_BangLai", new global::System.Data.DataColumn[] {
-                        this.tableLOAIMAYBAY.IDLOAIColumn}, new global::System.Data.DataColumn[] {
-                        this.tablesp_CT_BangLai.IDLOAIColumn});
-            this.tablesp_CT_BangLai.Constraints.Add(fkc);
-            fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
-            fkc.DeleteRule = global::System.Data.Rule.None;
-            fkc.UpdateRule = global::System.Data.Rule.Cascade;
             fkc = new global::System.Data.ForeignKeyConstraint("FK_sp_DanhSachPhiCong_sp_CT_BangLai", new global::System.Data.DataColumn[] {
                         this.tablesp_DanhSachPhiCong.ID_BANGLAIColumn}, new global::System.Data.DataColumn[] {
                         this.tablesp_CT_BangLai.ID_BANGLAIColumn});
@@ -1085,66 +1078,73 @@ namespace Quan_Ly_May_Bay {
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.None;
             fkc.UpdateRule = global::System.Data.Rule.Cascade;
-            this.relationFK_CANHAN_NGUOI = new global::System.Data.DataRelation("FK_CANHAN_NGUOI", new global::System.Data.DataColumn[] {
-                        this.tableNGUOI.IDNGUOIColumn}, new global::System.Data.DataColumn[] {
-                        this.tableCANHAN.IDNGUOIColumn}, false);
-            this.Relations.Add(this.relationFK_CANHAN_NGUOI);
+            fkc = new global::System.Data.ForeignKeyConstraint("FK_LOAIMAYBAY_sp_CT_BangLai", new global::System.Data.DataColumn[] {
+                        this.tableLOAIMAYBAY.IDLOAIColumn}, new global::System.Data.DataColumn[] {
+                        this.tablesp_CT_BangLai.IDLOAIColumn});
+            this.tablesp_CT_BangLai.Constraints.Add(fkc);
+            fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
+            fkc.DeleteRule = global::System.Data.Rule.None;
+            fkc.UpdateRule = global::System.Data.Rule.Cascade;
             this.relationFK_CANHAN_CHUMAYBAY = new global::System.Data.DataRelation("FK_CANHAN_CHUMAYBAY", new global::System.Data.DataColumn[] {
                         this.tableCHUMAYBAY.OWNER_IDColumn}, new global::System.Data.DataColumn[] {
                         this.tableCANHAN.OWNER_IDColumn}, false);
             this.Relations.Add(this.relationFK_CANHAN_CHUMAYBAY);
-            this.relationFK_CT_BANGLAI_LOAIMAYBAY = new global::System.Data.DataRelation("FK_CT_BANGLAI_LOAIMAYBAY", new global::System.Data.DataColumn[] {
-                        this.tableLOAIMAYBAY.IDLOAIColumn}, new global::System.Data.DataColumn[] {
-                        this.tableCT_BANGLAI.IDLOAIColumn}, false);
-            this.Relations.Add(this.relationFK_CT_BANGLAI_LOAIMAYBAY);
+            this.relationFK_CANHAN_NGUOI = new global::System.Data.DataRelation("FK_CANHAN_NGUOI", new global::System.Data.DataColumn[] {
+                        this.tableNGUOI.IDNGUOIColumn}, new global::System.Data.DataColumn[] {
+                        this.tableCANHAN.IDNGUOIColumn}, false);
+            this.Relations.Add(this.relationFK_CANHAN_NGUOI);
             this.relationFK_CT_BANGLAI_PHICONG = new global::System.Data.DataRelation("FK_CT_BANGLAI_PHICONG", new global::System.Data.DataColumn[] {
                         this.tablePHICONG.ID_BANGLAIColumn}, new global::System.Data.DataColumn[] {
                         this.tableCT_BANGLAI.ID_BANGLAIColumn}, false);
             this.Relations.Add(this.relationFK_CT_BANGLAI_PHICONG);
-            this.relationFK_CT_CHUMAYBAY_MAYBAY = new global::System.Data.DataRelation("FK_CT_CHUMAYBAY_MAYBAY", new global::System.Data.DataColumn[] {
-                        this.tableMAYBAY.IDMAYBAYColumn}, new global::System.Data.DataColumn[] {
-                        this.tableCT_CHUMAYBAY.IDMAYBAYColumn}, false);
-            this.Relations.Add(this.relationFK_CT_CHUMAYBAY_MAYBAY);
-            this.relationFK_CT_CHUMAYBAY_CHUMAYBAY = new global::System.Data.DataRelation("FK_CT_CHUMAYBAY_CHUMAYBAY", new global::System.Data.DataColumn[] {
-                        this.tableCHUMAYBAY.OWNER_IDColumn}, new global::System.Data.DataColumn[] {
-                        this.tableCT_CHUMAYBAY.OWNER_IDColumn}, false);
-            this.Relations.Add(this.relationFK_CT_CHUMAYBAY_CHUMAYBAY);
-            this.relationFK_sp_DanhSachCaNhan_CT_CHUMAYBAY = new global::System.Data.DataRelation("FK_sp_DanhSachCaNhan_CT_CHUMAYBAY", new global::System.Data.DataColumn[] {
-                        this.tablesp_DanhSachCaNhan.OWNER_IDColumn}, new global::System.Data.DataColumn[] {
-                        this.tableCT_CHUMAYBAY.OWNER_IDColumn}, false);
-            this.Relations.Add(this.relationFK_sp_DanhSachCaNhan_CT_CHUMAYBAY);
+            this.relationFK_CT_BANGLAI_LOAIMAYBAY = new global::System.Data.DataRelation("FK_CT_BANGLAI_LOAIMAYBAY", new global::System.Data.DataColumn[] {
+                        this.tableLOAIMAYBAY.IDLOAIColumn}, new global::System.Data.DataColumn[] {
+                        this.tableCT_BANGLAI.IDLOAIColumn}, false);
+            this.Relations.Add(this.relationFK_CT_BANGLAI_LOAIMAYBAY);
             this.relationFK_DOANHNGHIEP_CT_CHUMAYBAY = new global::System.Data.DataRelation("FK_DOANHNGHIEP_CT_CHUMAYBAY", new global::System.Data.DataColumn[] {
                         this.tableDOANHNGHIEP.OWNER_IDColumn}, new global::System.Data.DataColumn[] {
                         this.tableCT_CHUMAYBAY.OWNER_IDColumn}, false);
             this.Relations.Add(this.relationFK_DOANHNGHIEP_CT_CHUMAYBAY);
-            this.relationFK_CT_KHO_MAYBAY = new global::System.Data.DataRelation("FK_CT_KHO_MAYBAY", new global::System.Data.DataColumn[] {
+            this.relationFK_sp_DanhSachCaNhan_CT_CHUMAYBAY = new global::System.Data.DataRelation("FK_sp_DanhSachCaNhan_CT_CHUMAYBAY", new global::System.Data.DataColumn[] {
+                        this.tablesp_DanhSachCaNhan.OWNER_IDColumn}, new global::System.Data.DataColumn[] {
+                        this.tableCT_CHUMAYBAY.OWNER_IDColumn}, false);
+            this.Relations.Add(this.relationFK_sp_DanhSachCaNhan_CT_CHUMAYBAY);
+            this.relationFK_CT_CHUMAYBAY_CHUMAYBAY = new global::System.Data.DataRelation("FK_CT_CHUMAYBAY_CHUMAYBAY", new global::System.Data.DataColumn[] {
+                        this.tableCHUMAYBAY.OWNER_IDColumn}, new global::System.Data.DataColumn[] {
+                        this.tableCT_CHUMAYBAY.OWNER_IDColumn}, false);
+            this.Relations.Add(this.relationFK_CT_CHUMAYBAY_CHUMAYBAY);
+            this.relationFK_CT_CHUMAYBAY_MAYBAY = new global::System.Data.DataRelation("FK_CT_CHUMAYBAY_MAYBAY", new global::System.Data.DataColumn[] {
                         this.tableMAYBAY.IDMAYBAYColumn}, new global::System.Data.DataColumn[] {
-                        this.tableCT_KHO.IDMAYBAYColumn}, false);
-            this.Relations.Add(this.relationFK_CT_KHO_MAYBAY);
+                        this.tableCT_CHUMAYBAY.IDMAYBAYColumn}, false);
+            this.Relations.Add(this.relationFK_CT_CHUMAYBAY_MAYBAY);
             this.relationFK_CT_KHO_KHO = new global::System.Data.DataRelation("FK_CT_KHO_KHO", new global::System.Data.DataColumn[] {
                         this.tableKHO.IDKHOColumn}, new global::System.Data.DataColumn[] {
                         this.tableCT_KHO.IDKHOColumn}, false);
             this.Relations.Add(this.relationFK_CT_KHO_KHO);
-            this.relationFK_sp_DanhSachNhanVienBaoTri_CT_NVBAOTRI = new global::System.Data.DataRelation("FK_sp_DanhSachNhanVienBaoTri_CT_NVBAOTRI", new global::System.Data.DataColumn[] {
-                        this.tablesp_DanhSachNhanVienBaoTri.IDNHANVIENColumn}, new global::System.Data.DataColumn[] {
-                        this.tableCT_NVBAOTRI.IDNHANVIENColumn}, false);
-            this.Relations.Add(this.relationFK_sp_DanhSachNhanVienBaoTri_CT_NVBAOTRI);
-            this.relationFK_CT_NVBAOTRI_NHANVIEN = new global::System.Data.DataRelation("FK_CT_NVBAOTRI_NHANVIEN", new global::System.Data.DataColumn[] {
-                        this.tableNHANVIEN.IDNHANVIENColumn}, new global::System.Data.DataColumn[] {
-                        this.tableCT_NVBAOTRI.IDNHANVIENColumn}, false);
-            this.Relations.Add(this.relationFK_CT_NVBAOTRI_NHANVIEN);
+            this.relationFK_CT_KHO_MAYBAY = new global::System.Data.DataRelation("FK_CT_KHO_MAYBAY", new global::System.Data.DataColumn[] {
+                        this.tableMAYBAY.IDMAYBAYColumn}, new global::System.Data.DataColumn[] {
+                        this.tableCT_KHO.IDMAYBAYColumn}, false);
+            this.Relations.Add(this.relationFK_CT_KHO_MAYBAY);
             this.relationFK_CT_NVBAOTRI_LOAIMAYBAY = new global::System.Data.DataRelation("FK_CT_NVBAOTRI_LOAIMAYBAY", new global::System.Data.DataColumn[] {
                         this.tableLOAIMAYBAY.IDLOAIColumn}, new global::System.Data.DataColumn[] {
                         this.tableCT_NVBAOTRI.IDLOAIColumn}, false);
             this.Relations.Add(this.relationFK_CT_NVBAOTRI_LOAIMAYBAY);
-            this.relationFK_CT_PHIEUBAOTRI_PHIEUBAOTRI = new global::System.Data.DataRelation("FK_CT_PHIEUBAOTRI_PHIEUBAOTRI", new global::System.Data.DataColumn[] {
-                        this.tablePHIEUBAOTRI.IDPHIEUColumn}, new global::System.Data.DataColumn[] {
-                        this.tableCT_PHIEUBAOTRI.IDPHIEUColumn}, false);
-            this.Relations.Add(this.relationFK_CT_PHIEUBAOTRI_PHIEUBAOTRI);
+            this.relationFK_CT_NVBAOTRI_NHANVIEN = new global::System.Data.DataRelation("FK_CT_NVBAOTRI_NHANVIEN", new global::System.Data.DataColumn[] {
+                        this.tableNHANVIEN.IDNHANVIENColumn}, new global::System.Data.DataColumn[] {
+                        this.tableCT_NVBAOTRI.IDNHANVIENColumn}, false);
+            this.Relations.Add(this.relationFK_CT_NVBAOTRI_NHANVIEN);
+            this.relationFK_sp_DanhSachNhanVienBaoTri_CT_NVBAOTRI = new global::System.Data.DataRelation("FK_sp_DanhSachNhanVienBaoTri_CT_NVBAOTRI", new global::System.Data.DataColumn[] {
+                        this.tablesp_DanhSachNhanVienBaoTri.IDNHANVIENColumn}, new global::System.Data.DataColumn[] {
+                        this.tableCT_NVBAOTRI.IDNHANVIENColumn}, false);
+            this.Relations.Add(this.relationFK_sp_DanhSachNhanVienBaoTri_CT_NVBAOTRI);
             this.relationFK_CT_PHIEUBAOTRI_NHANVIEN1 = new global::System.Data.DataRelation("FK_CT_PHIEUBAOTRI_NHANVIEN1", new global::System.Data.DataColumn[] {
                         this.tableNHANVIEN.IDNHANVIENColumn}, new global::System.Data.DataColumn[] {
                         this.tableCT_PHIEUBAOTRI.IDNHANVIENColumn}, false);
             this.Relations.Add(this.relationFK_CT_PHIEUBAOTRI_NHANVIEN1);
+            this.relationFK_CT_PHIEUBAOTRI_PHIEUBAOTRI = new global::System.Data.DataRelation("FK_CT_PHIEUBAOTRI_PHIEUBAOTRI", new global::System.Data.DataColumn[] {
+                        this.tablePHIEUBAOTRI.IDPHIEUColumn}, new global::System.Data.DataColumn[] {
+                        this.tableCT_PHIEUBAOTRI.IDPHIEUColumn}, false);
+            this.Relations.Add(this.relationFK_CT_PHIEUBAOTRI_PHIEUBAOTRI);
             this.relationFK_DOANHNGHIEP_CHUMAYBAY = new global::System.Data.DataRelation("FK_DOANHNGHIEP_CHUMAYBAY", new global::System.Data.DataColumn[] {
                         this.tableCHUMAYBAY.OWNER_IDColumn}, new global::System.Data.DataColumn[] {
                         this.tableDOANHNGHIEP.OWNER_IDColumn}, false);
@@ -1157,30 +1157,30 @@ namespace Quan_Ly_May_Bay {
                         this.tablesp_DanhSachCaNhan.IDNGUOIColumn}, new global::System.Data.DataColumn[] {
                         this.tableNGUOI.IDNGUOIColumn}, false);
             this.Relations.Add(this.relationFK_sp_DanhSachCaNhan_NGUOI);
-            this.relationFK_NHANVIEN_NGUOI = new global::System.Data.DataRelation("FK_NHANVIEN_NGUOI", new global::System.Data.DataColumn[] {
-                        this.tableNGUOI.IDNGUOIColumn}, new global::System.Data.DataColumn[] {
-                        this.tableNHANVIEN.IDNGUOIColumn}, false);
-            this.Relations.Add(this.relationFK_NHANVIEN_NGUOI);
             this.relationFK_sp_DanhSachNhanVien_NHANVIEN = new global::System.Data.DataRelation("FK_sp_DanhSachNhanVien_NHANVIEN", new global::System.Data.DataColumn[] {
                         this.tablesp_DanhSachNhanVien.IDNHANVIENColumn}, new global::System.Data.DataColumn[] {
                         this.tableNHANVIEN.IDNHANVIENColumn}, false);
             this.Relations.Add(this.relationFK_sp_DanhSachNhanVien_NHANVIEN);
-            this.relationFK_PHIEUBAOTRI_NHANVIEN1 = new global::System.Data.DataRelation("FK_PHIEUBAOTRI_NHANVIEN1", new global::System.Data.DataColumn[] {
-                        this.tableNHANVIEN.IDNHANVIENColumn}, new global::System.Data.DataColumn[] {
-                        this.tablePHIEUBAOTRI.IDNHANVIENColumn}, false);
-            this.Relations.Add(this.relationFK_PHIEUBAOTRI_NHANVIEN1);
+            this.relationFK_NHANVIEN_NGUOI = new global::System.Data.DataRelation("FK_NHANVIEN_NGUOI", new global::System.Data.DataColumn[] {
+                        this.tableNGUOI.IDNGUOIColumn}, new global::System.Data.DataColumn[] {
+                        this.tableNHANVIEN.IDNGUOIColumn}, false);
+            this.Relations.Add(this.relationFK_NHANVIEN_NGUOI);
             this.relationFK_PHIEUBAOTRI_MAYBAY = new global::System.Data.DataRelation("FK_PHIEUBAOTRI_MAYBAY", new global::System.Data.DataColumn[] {
                         this.tableMAYBAY.IDMAYBAYColumn}, new global::System.Data.DataColumn[] {
                         this.tablePHIEUBAOTRI.IDMAYBAYColumn}, false);
             this.Relations.Add(this.relationFK_PHIEUBAOTRI_MAYBAY);
-            this.relationFK_sp_DanhSachCaNhan_sp_DanhSachChuMayBay = new global::System.Data.DataRelation("FK_sp_DanhSachCaNhan_sp_DanhSachChuMayBay", new global::System.Data.DataColumn[] {
-                        this.tablesp_DanhSachCaNhan.OWNER_IDColumn}, new global::System.Data.DataColumn[] {
-                        this.tablesp_DanhSachChuMayBay.OWNER_IDColumn}, false);
-            this.Relations.Add(this.relationFK_sp_DanhSachCaNhan_sp_DanhSachChuMayBay);
+            this.relationFK_PHIEUBAOTRI_NHANVIEN1 = new global::System.Data.DataRelation("FK_PHIEUBAOTRI_NHANVIEN1", new global::System.Data.DataColumn[] {
+                        this.tableNHANVIEN.IDNHANVIENColumn}, new global::System.Data.DataColumn[] {
+                        this.tablePHIEUBAOTRI.IDNHANVIENColumn}, false);
+            this.Relations.Add(this.relationFK_PHIEUBAOTRI_NHANVIEN1);
             this.relationFK_DOANHNGHIEP_sp_DanhSachChuMayBay = new global::System.Data.DataRelation("FK_DOANHNGHIEP_sp_DanhSachChuMayBay", new global::System.Data.DataColumn[] {
                         this.tableDOANHNGHIEP.OWNER_IDColumn}, new global::System.Data.DataColumn[] {
                         this.tablesp_DanhSachChuMayBay.OWNER_IDColumn}, false);
             this.Relations.Add(this.relationFK_DOANHNGHIEP_sp_DanhSachChuMayBay);
+            this.relationFK_sp_DanhSachCaNhan_sp_DanhSachChuMayBay = new global::System.Data.DataRelation("FK_sp_DanhSachCaNhan_sp_DanhSachChuMayBay", new global::System.Data.DataColumn[] {
+                        this.tablesp_DanhSachCaNhan.OWNER_IDColumn}, new global::System.Data.DataColumn[] {
+                        this.tablesp_DanhSachChuMayBay.OWNER_IDColumn}, false);
+            this.Relations.Add(this.relationFK_sp_DanhSachCaNhan_sp_DanhSachChuMayBay);
             this.relationFK_PHICONG_NHANVIEN = new global::System.Data.DataRelation("FK_PHICONG_NHANVIEN", new global::System.Data.DataColumn[] {
                         this.tableNHANVIEN.IDNHANVIENColumn}, new global::System.Data.DataColumn[] {
                         this.tablePHICONG.IDNHANVIENColumn}, false);
@@ -1189,14 +1189,14 @@ namespace Quan_Ly_May_Bay {
                         this.tableNHANVIEN.IDNHANVIENColumn}, new global::System.Data.DataColumn[] {
                         this.tablesp_DanhSachPhiCong.IDNHANVIENColumn}, false);
             this.Relations.Add(this.relationFK_NHANVIEN_sp_DanhSachPhiCong);
-            this.relationFK_LOAIMAYBAY_sp_CT_BangLai = new global::System.Data.DataRelation("FK_LOAIMAYBAY_sp_CT_BangLai", new global::System.Data.DataColumn[] {
-                        this.tableLOAIMAYBAY.IDLOAIColumn}, new global::System.Data.DataColumn[] {
-                        this.tablesp_CT_BangLai.IDLOAIColumn}, false);
-            this.Relations.Add(this.relationFK_LOAIMAYBAY_sp_CT_BangLai);
             this.relationFK_sp_DanhSachPhiCong_sp_CT_BangLai = new global::System.Data.DataRelation("FK_sp_DanhSachPhiCong_sp_CT_BangLai", new global::System.Data.DataColumn[] {
                         this.tablesp_DanhSachPhiCong.ID_BANGLAIColumn}, new global::System.Data.DataColumn[] {
                         this.tablesp_CT_BangLai.ID_BANGLAIColumn}, false);
             this.Relations.Add(this.relationFK_sp_DanhSachPhiCong_sp_CT_BangLai);
+            this.relationFK_LOAIMAYBAY_sp_CT_BangLai = new global::System.Data.DataRelation("FK_LOAIMAYBAY_sp_CT_BangLai", new global::System.Data.DataColumn[] {
+                        this.tableLOAIMAYBAY.IDLOAIColumn}, new global::System.Data.DataColumn[] {
+                        this.tablesp_CT_BangLai.IDLOAIColumn}, false);
+            this.Relations.Add(this.relationFK_LOAIMAYBAY_sp_CT_BangLai);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2413,14 +2413,14 @@ namespace Quan_Ly_May_Bay {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public CT_CHUMAYBAYRow AddCT_CHUMAYBAYRow(CHUMAYBAYRow parentCHUMAYBAYRowByFK_CT_CHUMAYBAY_CHUMAYBAY, MAYBAYRow parentMAYBAYRowByFK_CT_CHUMAYBAY_MAYBAY, System.DateTime NGAYBATDAU) {
+            public CT_CHUMAYBAYRow AddCT_CHUMAYBAYRow(DOANHNGHIEPRow parentDOANHNGHIEPRowByFK_DOANHNGHIEP_CT_CHUMAYBAY, MAYBAYRow parentMAYBAYRowByFK_CT_CHUMAYBAY_MAYBAY, System.DateTime NGAYBATDAU) {
                 CT_CHUMAYBAYRow rowCT_CHUMAYBAYRow = ((CT_CHUMAYBAYRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         null,
                         NGAYBATDAU};
-                if ((parentCHUMAYBAYRowByFK_CT_CHUMAYBAY_CHUMAYBAY != null)) {
-                    columnValuesArray[0] = parentCHUMAYBAYRowByFK_CT_CHUMAYBAY_CHUMAYBAY[0];
+                if ((parentDOANHNGHIEPRowByFK_DOANHNGHIEP_CT_CHUMAYBAY != null)) {
+                    columnValuesArray[0] = parentDOANHNGHIEPRowByFK_DOANHNGHIEP_CT_CHUMAYBAY[0];
                 }
                 if ((parentMAYBAYRowByFK_CT_CHUMAYBAY_MAYBAY != null)) {
                     columnValuesArray[1] = parentMAYBAYRowByFK_CT_CHUMAYBAY_MAYBAY[0];
@@ -2984,13 +2984,13 @@ namespace Quan_Ly_May_Bay {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public CT_NVBAOTRIRow AddCT_NVBAOTRIRow(sp_DanhSachNhanVienBaoTriRow parentsp_DanhSachNhanVienBaoTriRowByFK_sp_DanhSachNhanVienBaoTri_CT_NVBAOTRI, LOAIMAYBAYRow parentLOAIMAYBAYRowByFK_CT_NVBAOTRI_LOAIMAYBAY) {
+            public CT_NVBAOTRIRow AddCT_NVBAOTRIRow(NHANVIENRow parentNHANVIENRowByFK_CT_NVBAOTRI_NHANVIEN, LOAIMAYBAYRow parentLOAIMAYBAYRowByFK_CT_NVBAOTRI_LOAIMAYBAY) {
                 CT_NVBAOTRIRow rowCT_NVBAOTRIRow = ((CT_NVBAOTRIRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         null};
-                if ((parentsp_DanhSachNhanVienBaoTriRowByFK_sp_DanhSachNhanVienBaoTri_CT_NVBAOTRI != null)) {
-                    columnValuesArray[0] = parentsp_DanhSachNhanVienBaoTriRowByFK_sp_DanhSachNhanVienBaoTri_CT_NVBAOTRI[0];
+                if ((parentNHANVIENRowByFK_CT_NVBAOTRI_NHANVIEN != null)) {
+                    columnValuesArray[0] = parentNHANVIENRowByFK_CT_NVBAOTRI_NHANVIEN[0];
                 }
                 if ((parentLOAIMAYBAYRowByFK_CT_NVBAOTRI_LOAIMAYBAY != null)) {
                     columnValuesArray[1] = parentLOAIMAYBAYRowByFK_CT_NVBAOTRI_LOAIMAYBAY[0];
@@ -4092,6 +4092,12 @@ namespace Quan_Ly_May_Bay {
             
             private global::System.Data.DataColumn columnTENLOAI;
             
+            private global::System.Data.DataColumn columnKIEUDANG;
+            
+            private global::System.Data.DataColumn columnSUCCHUA;
+            
+            private global::System.Data.DataColumn columnTRONGLUONG;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public LOAIMAYBAYDataTable() {
@@ -4143,6 +4149,30 @@ namespace Quan_Ly_May_Bay {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn KIEUDANGColumn {
+                get {
+                    return this.columnKIEUDANG;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn SUCCHUAColumn {
+                get {
+                    return this.columnSUCCHUA;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn TRONGLUONGColumn {
+                get {
+                    return this.columnTRONGLUONG;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -4178,11 +4208,14 @@ namespace Quan_Ly_May_Bay {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public LOAIMAYBAYRow AddLOAIMAYBAYRow(string IDLOAI, string TENLOAI) {
+            public LOAIMAYBAYRow AddLOAIMAYBAYRow(string IDLOAI, string TENLOAI, string KIEUDANG, int SUCCHUA, double TRONGLUONG) {
                 LOAIMAYBAYRow rowLOAIMAYBAYRow = ((LOAIMAYBAYRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         IDLOAI,
-                        TENLOAI};
+                        TENLOAI,
+                        KIEUDANG,
+                        SUCCHUA,
+                        TRONGLUONG};
                 rowLOAIMAYBAYRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowLOAIMAYBAYRow);
                 return rowLOAIMAYBAYRow;
@@ -4214,6 +4247,9 @@ namespace Quan_Ly_May_Bay {
             internal void InitVars() {
                 this.columnIDLOAI = base.Columns["IDLOAI"];
                 this.columnTENLOAI = base.Columns["TENLOAI"];
+                this.columnKIEUDANG = base.Columns["KIEUDANG"];
+                this.columnSUCCHUA = base.Columns["SUCCHUA"];
+                this.columnTRONGLUONG = base.Columns["TRONGLUONG"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4223,6 +4259,12 @@ namespace Quan_Ly_May_Bay {
                 base.Columns.Add(this.columnIDLOAI);
                 this.columnTENLOAI = new global::System.Data.DataColumn("TENLOAI", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTENLOAI);
+                this.columnKIEUDANG = new global::System.Data.DataColumn("KIEUDANG", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnKIEUDANG);
+                this.columnSUCCHUA = new global::System.Data.DataColumn("SUCCHUA", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSUCCHUA);
+                this.columnTRONGLUONG = new global::System.Data.DataColumn("TRONGLUONG", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTRONGLUONG);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnIDLOAI}, true));
                 this.columnIDLOAI.AllowDBNull = false;
@@ -4230,6 +4272,10 @@ namespace Quan_Ly_May_Bay {
                 this.columnIDLOAI.MaxLength = 10;
                 this.columnTENLOAI.AllowDBNull = false;
                 this.columnTENLOAI.MaxLength = 50;
+                this.columnKIEUDANG.AllowDBNull = false;
+                this.columnKIEUDANG.MaxLength = 50;
+                this.columnSUCCHUA.AllowDBNull = false;
+                this.columnTRONGLUONG.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6077,15 +6123,15 @@ namespace Quan_Ly_May_Bay {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public sp_DanhSachChuMayBayRow Addsp_DanhSachChuMayBayRow(sp_DanhSachCaNhanRow parentsp_DanhSachCaNhanRowByFK_sp_DanhSachCaNhan_sp_DanhSachChuMayBay, string IDMAYBAY, string TENLOAI, System.DateTime NGAYBATDAU) {
+            public sp_DanhSachChuMayBayRow Addsp_DanhSachChuMayBayRow(DOANHNGHIEPRow parentDOANHNGHIEPRowByFK_DOANHNGHIEP_sp_DanhSachChuMayBay, string IDMAYBAY, string TENLOAI, System.DateTime NGAYBATDAU) {
                 sp_DanhSachChuMayBayRow rowsp_DanhSachChuMayBayRow = ((sp_DanhSachChuMayBayRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         IDMAYBAY,
                         TENLOAI,
                         NGAYBATDAU};
-                if ((parentsp_DanhSachCaNhanRowByFK_sp_DanhSachCaNhan_sp_DanhSachChuMayBay != null)) {
-                    columnValuesArray[0] = parentsp_DanhSachCaNhanRowByFK_sp_DanhSachCaNhan_sp_DanhSachChuMayBay[0];
+                if ((parentDOANHNGHIEPRowByFK_DOANHNGHIEP_sp_DanhSachChuMayBay != null)) {
+                    columnValuesArray[0] = parentDOANHNGHIEPRowByFK_DOANHNGHIEP_sp_DanhSachChuMayBay[0];
                 }
                 rowsp_DanhSachChuMayBayRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowsp_DanhSachChuMayBayRow);
@@ -8965,23 +9011,23 @@ namespace Quan_Ly_May_Bay {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public NGUOIRow NGUOIRow {
-                get {
-                    return ((NGUOIRow)(this.GetParentRow(this.Table.ParentRelations["FK_CANHAN_NGUOI"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_CANHAN_NGUOI"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public CHUMAYBAYRow CHUMAYBAYRow {
                 get {
                     return ((CHUMAYBAYRow)(this.GetParentRow(this.Table.ParentRelations["FK_CANHAN_CHUMAYBAY"])));
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["FK_CANHAN_CHUMAYBAY"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public NGUOIRow NGUOIRow {
+                get {
+                    return ((NGUOIRow)(this.GetParentRow(this.Table.ParentRelations["FK_CANHAN_NGUOI"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK_CANHAN_NGUOI"]);
                 }
             }
         }
@@ -9094,23 +9140,23 @@ namespace Quan_Ly_May_Bay {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public LOAIMAYBAYRow LOAIMAYBAYRow {
-                get {
-                    return ((LOAIMAYBAYRow)(this.GetParentRow(this.Table.ParentRelations["FK_CT_BANGLAI_LOAIMAYBAY"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_CT_BANGLAI_LOAIMAYBAY"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public PHICONGRow PHICONGRow {
                 get {
                     return ((PHICONGRow)(this.GetParentRow(this.Table.ParentRelations["FK_CT_BANGLAI_PHICONG"])));
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["FK_CT_BANGLAI_PHICONG"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public LOAIMAYBAYRow LOAIMAYBAYRow {
+                get {
+                    return ((LOAIMAYBAYRow)(this.GetParentRow(this.Table.ParentRelations["FK_CT_BANGLAI_LOAIMAYBAY"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK_CT_BANGLAI_LOAIMAYBAY"]);
                 }
             }
         }
@@ -9164,23 +9210,12 @@ namespace Quan_Ly_May_Bay {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public MAYBAYRow MAYBAYRow {
+            public DOANHNGHIEPRow DOANHNGHIEPRow {
                 get {
-                    return ((MAYBAYRow)(this.GetParentRow(this.Table.ParentRelations["FK_CT_CHUMAYBAY_MAYBAY"])));
+                    return ((DOANHNGHIEPRow)(this.GetParentRow(this.Table.ParentRelations["FK_DOANHNGHIEP_CT_CHUMAYBAY"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_CT_CHUMAYBAY_MAYBAY"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public CHUMAYBAYRow CHUMAYBAYRow {
-                get {
-                    return ((CHUMAYBAYRow)(this.GetParentRow(this.Table.ParentRelations["FK_CT_CHUMAYBAY_CHUMAYBAY"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_CT_CHUMAYBAY_CHUMAYBAY"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK_DOANHNGHIEP_CT_CHUMAYBAY"]);
                 }
             }
             
@@ -9197,12 +9232,23 @@ namespace Quan_Ly_May_Bay {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public DOANHNGHIEPRow DOANHNGHIEPRow {
+            public CHUMAYBAYRow CHUMAYBAYRow {
                 get {
-                    return ((DOANHNGHIEPRow)(this.GetParentRow(this.Table.ParentRelations["FK_DOANHNGHIEP_CT_CHUMAYBAY"])));
+                    return ((CHUMAYBAYRow)(this.GetParentRow(this.Table.ParentRelations["FK_CT_CHUMAYBAY_CHUMAYBAY"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_DOANHNGHIEP_CT_CHUMAYBAY"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK_CT_CHUMAYBAY_CHUMAYBAY"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public MAYBAYRow MAYBAYRow {
+                get {
+                    return ((MAYBAYRow)(this.GetParentRow(this.Table.ParentRelations["FK_CT_CHUMAYBAY_MAYBAY"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK_CT_CHUMAYBAY_MAYBAY"]);
                 }
             }
         }
@@ -9245,23 +9291,23 @@ namespace Quan_Ly_May_Bay {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public MAYBAYRow MAYBAYRow {
-                get {
-                    return ((MAYBAYRow)(this.GetParentRow(this.Table.ParentRelations["FK_CT_KHO_MAYBAY"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_CT_KHO_MAYBAY"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public KHORow KHORow {
                 get {
                     return ((KHORow)(this.GetParentRow(this.Table.ParentRelations["FK_CT_KHO_KHO"])));
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["FK_CT_KHO_KHO"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public MAYBAYRow MAYBAYRow {
+                get {
+                    return ((MAYBAYRow)(this.GetParentRow(this.Table.ParentRelations["FK_CT_KHO_MAYBAY"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK_CT_KHO_MAYBAY"]);
                 }
             }
         }
@@ -9304,12 +9350,12 @@ namespace Quan_Ly_May_Bay {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public sp_DanhSachNhanVienBaoTriRow sp_DanhSachNhanVienBaoTriRow {
+            public LOAIMAYBAYRow LOAIMAYBAYRow {
                 get {
-                    return ((sp_DanhSachNhanVienBaoTriRow)(this.GetParentRow(this.Table.ParentRelations["FK_sp_DanhSachNhanVienBaoTri_CT_NVBAOTRI"])));
+                    return ((LOAIMAYBAYRow)(this.GetParentRow(this.Table.ParentRelations["FK_CT_NVBAOTRI_LOAIMAYBAY"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_sp_DanhSachNhanVienBaoTri_CT_NVBAOTRI"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK_CT_NVBAOTRI_LOAIMAYBAY"]);
                 }
             }
             
@@ -9326,12 +9372,12 @@ namespace Quan_Ly_May_Bay {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public LOAIMAYBAYRow LOAIMAYBAYRow {
+            public sp_DanhSachNhanVienBaoTriRow sp_DanhSachNhanVienBaoTriRow {
                 get {
-                    return ((LOAIMAYBAYRow)(this.GetParentRow(this.Table.ParentRelations["FK_CT_NVBAOTRI_LOAIMAYBAY"])));
+                    return ((sp_DanhSachNhanVienBaoTriRow)(this.GetParentRow(this.Table.ParentRelations["FK_sp_DanhSachNhanVienBaoTri_CT_NVBAOTRI"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_CT_NVBAOTRI_LOAIMAYBAY"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK_sp_DanhSachNhanVienBaoTri_CT_NVBAOTRI"]);
                 }
             }
         }
@@ -9385,23 +9431,23 @@ namespace Quan_Ly_May_Bay {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public PHIEUBAOTRIRow PHIEUBAOTRIRow {
-                get {
-                    return ((PHIEUBAOTRIRow)(this.GetParentRow(this.Table.ParentRelations["FK_CT_PHIEUBAOTRI_PHIEUBAOTRI"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_CT_PHIEUBAOTRI_PHIEUBAOTRI"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public NHANVIENRow NHANVIENRow {
                 get {
                     return ((NHANVIENRow)(this.GetParentRow(this.Table.ParentRelations["FK_CT_PHIEUBAOTRI_NHANVIEN1"])));
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["FK_CT_PHIEUBAOTRI_NHANVIEN1"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public PHIEUBAOTRIRow PHIEUBAOTRIRow {
+                get {
+                    return ((PHIEUBAOTRIRow)(this.GetParentRow(this.Table.ParentRelations["FK_CT_PHIEUBAOTRI_PHIEUBAOTRI"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK_CT_PHIEUBAOTRI_PHIEUBAOTRI"]);
                 }
             }
         }
@@ -9601,6 +9647,39 @@ namespace Quan_Ly_May_Bay {
                 }
                 set {
                     this[this.tableLOAIMAYBAY.TENLOAIColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string KIEUDANG {
+                get {
+                    return ((string)(this[this.tableLOAIMAYBAY.KIEUDANGColumn]));
+                }
+                set {
+                    this[this.tableLOAIMAYBAY.KIEUDANGColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int SUCCHUA {
+                get {
+                    return ((int)(this[this.tableLOAIMAYBAY.SUCCHUAColumn]));
+                }
+                set {
+                    this[this.tableLOAIMAYBAY.SUCCHUAColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public double TRONGLUONG {
+                get {
+                    return ((double)(this[this.tableLOAIMAYBAY.TRONGLUONGColumn]));
+                }
+                set {
+                    this[this.tableLOAIMAYBAY.TRONGLUONGColumn] = value;
                 }
             }
             
@@ -9904,23 +9983,23 @@ namespace Quan_Ly_May_Bay {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public NGUOIRow NGUOIRow {
-                get {
-                    return ((NGUOIRow)(this.GetParentRow(this.Table.ParentRelations["FK_NHANVIEN_NGUOI"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_NHANVIEN_NGUOI"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public sp_DanhSachNhanVienRow sp_DanhSachNhanVienRow {
                 get {
                     return ((sp_DanhSachNhanVienRow)(this.GetParentRow(this.Table.ParentRelations["FK_sp_DanhSachNhanVien_NHANVIEN"])));
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["FK_sp_DanhSachNhanVien_NHANVIEN"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public NGUOIRow NGUOIRow {
+                get {
+                    return ((NGUOIRow)(this.GetParentRow(this.Table.ParentRelations["FK_NHANVIEN_NGUOI"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK_NHANVIEN_NGUOI"]);
                 }
             }
             
@@ -10051,23 +10130,23 @@ namespace Quan_Ly_May_Bay {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public NHANVIENRow NHANVIENRow {
-                get {
-                    return ((NHANVIENRow)(this.GetParentRow(this.Table.ParentRelations["FK_PHIEUBAOTRI_NHANVIEN1"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_PHIEUBAOTRI_NHANVIEN1"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public MAYBAYRow MAYBAYRow {
                 get {
                     return ((MAYBAYRow)(this.GetParentRow(this.Table.ParentRelations["FK_PHIEUBAOTRI_MAYBAY"])));
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["FK_PHIEUBAOTRI_MAYBAY"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public NHANVIENRow NHANVIENRow {
+                get {
+                    return ((NHANVIENRow)(this.GetParentRow(this.Table.ParentRelations["FK_PHIEUBAOTRI_NHANVIEN1"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK_PHIEUBAOTRI_NHANVIEN1"]);
                 }
             }
             
@@ -10257,23 +10336,23 @@ namespace Quan_Ly_May_Bay {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public sp_DanhSachCaNhanRow sp_DanhSachCaNhanRow {
-                get {
-                    return ((sp_DanhSachCaNhanRow)(this.GetParentRow(this.Table.ParentRelations["FK_sp_DanhSachCaNhan_sp_DanhSachChuMayBay"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_sp_DanhSachCaNhan_sp_DanhSachChuMayBay"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public DOANHNGHIEPRow DOANHNGHIEPRow {
                 get {
                     return ((DOANHNGHIEPRow)(this.GetParentRow(this.Table.ParentRelations["FK_DOANHNGHIEP_sp_DanhSachChuMayBay"])));
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["FK_DOANHNGHIEP_sp_DanhSachChuMayBay"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public sp_DanhSachCaNhanRow sp_DanhSachCaNhanRow {
+                get {
+                    return ((sp_DanhSachCaNhanRow)(this.GetParentRow(this.Table.ParentRelations["FK_sp_DanhSachCaNhan_sp_DanhSachChuMayBay"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK_sp_DanhSachCaNhan_sp_DanhSachChuMayBay"]);
                 }
             }
         }
@@ -10923,23 +11002,23 @@ namespace Quan_Ly_May_Bay {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public LOAIMAYBAYRow LOAIMAYBAYRow {
-                get {
-                    return ((LOAIMAYBAYRow)(this.GetParentRow(this.Table.ParentRelations["FK_LOAIMAYBAY_sp_CT_BangLai"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_LOAIMAYBAY_sp_CT_BangLai"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public sp_DanhSachPhiCongRow sp_DanhSachPhiCongRow {
                 get {
                     return ((sp_DanhSachPhiCongRow)(this.GetParentRow(this.Table.ParentRelations["FK_sp_DanhSachPhiCong_sp_CT_BangLai"])));
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["FK_sp_DanhSachPhiCong_sp_CT_BangLai"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public LOAIMAYBAYRow LOAIMAYBAYRow {
+                get {
+                    return ((LOAIMAYBAYRow)(this.GetParentRow(this.Table.ParentRelations["FK_LOAIMAYBAY_sp_CT_BangLai"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK_LOAIMAYBAY_sp_CT_BangLai"]);
                 }
             }
         }
@@ -15039,31 +15118,48 @@ SELECT OWNER_ID, TENDN, DIACHI, SDT, TENNGUOIDAIDIEN FROM DOANHNGHIEP WHERE (OWN
             tableMapping.DataSetTable = "LOAIMAYBAY";
             tableMapping.ColumnMappings.Add("IDLOAI", "IDLOAI");
             tableMapping.ColumnMappings.Add("TENLOAI", "TENLOAI");
+            tableMapping.ColumnMappings.Add("KIEUDANG", "KIEUDANG");
+            tableMapping.ColumnMappings.Add("SUCCHUA", "SUCCHUA");
+            tableMapping.ColumnMappings.Add("TRONGLUONG", "TRONGLUONG");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[LOAIMAYBAY] WHERE (([IDLOAI] = @Original_IDLOAI) AND ([TENLOAI" +
-                "] = @Original_TENLOAI))";
+            this._adapter.DeleteCommand.CommandText = "DELETE FROM [LOAIMAYBAY] WHERE (([IDLOAI] = @Original_IDLOAI) AND ([TENLOAI] = @O" +
+                "riginal_TENLOAI) AND ([KIEUDANG] = @Original_KIEUDANG) AND ([SUCCHUA] = @Origina" +
+                "l_SUCCHUA) AND ([TRONGLUONG] = @Original_TRONGLUONG))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IDLOAI", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IDLOAI", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TENLOAI", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TENLOAI", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_KIEUDANG", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "KIEUDANG", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SUCCHUA", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SUCCHUA", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TRONGLUONG", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TRONGLUONG", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[LOAIMAYBAY] ([IDLOAI], [TENLOAI]) VALUES (@IDLOAI, @TENLOAI);\r" +
-                "\nSELECT IDLOAI, TENLOAI FROM LOAIMAYBAY WHERE (IDLOAI = @IDLOAI)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [LOAIMAYBAY] ([IDLOAI], [TENLOAI], [KIEUDANG], [SUCCHUA], [TRONGLUONG" +
+                "]) VALUES (@IDLOAI, @TENLOAI, @KIEUDANG, @SUCCHUA, @TRONGLUONG);\r\nSELECT IDLOAI," +
+                " TENLOAI, KIEUDANG, SUCCHUA, TRONGLUONG FROM LOAIMAYBAY WHERE (IDLOAI = @IDLOAI)" +
+                "";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IDLOAI", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IDLOAI", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TENLOAI", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TENLOAI", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@KIEUDANG", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "KIEUDANG", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SUCCHUA", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SUCCHUA", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TRONGLUONG", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TRONGLUONG", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[LOAIMAYBAY] SET [IDLOAI] = @IDLOAI, [TENLOAI] = @TENLOAI WHERE (([I" +
-                "DLOAI] = @Original_IDLOAI) AND ([TENLOAI] = @Original_TENLOAI));\r\nSELECT IDLOAI," +
-                " TENLOAI FROM LOAIMAYBAY WHERE (IDLOAI = @IDLOAI)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [LOAIMAYBAY] SET [IDLOAI] = @IDLOAI, [TENLOAI] = @TENLOAI, [KIEUDANG] = @KIEUDANG, [SUCCHUA] = @SUCCHUA, [TRONGLUONG] = @TRONGLUONG WHERE (([IDLOAI] = @Original_IDLOAI) AND ([TENLOAI] = @Original_TENLOAI) AND ([KIEUDANG] = @Original_KIEUDANG) AND ([SUCCHUA] = @Original_SUCCHUA) AND ([TRONGLUONG] = @Original_TRONGLUONG));
+SELECT IDLOAI, TENLOAI, KIEUDANG, SUCCHUA, TRONGLUONG FROM LOAIMAYBAY WHERE (IDLOAI = @IDLOAI)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IDLOAI", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IDLOAI", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TENLOAI", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TENLOAI", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@KIEUDANG", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "KIEUDANG", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SUCCHUA", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SUCCHUA", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TRONGLUONG", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TRONGLUONG", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IDLOAI", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IDLOAI", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TENLOAI", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TENLOAI", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_KIEUDANG", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "KIEUDANG", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SUCCHUA", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SUCCHUA", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TRONGLUONG", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TRONGLUONG", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -15079,7 +15175,7 @@ SELECT OWNER_ID, TENDN, DIACHI, SDT, TENNGUOIDAIDIEN FROM DOANHNGHIEP WHERE (OWN
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT IDLOAI, TENLOAI FROM dbo.LOAIMAYBAY";
+            this._commandCollection[0].CommandText = "SELECT IDLOAI, TENLOAI, KIEUDANG, SUCCHUA, TRONGLUONG FROM LOAIMAYBAY";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -15140,7 +15236,7 @@ SELECT OWNER_ID, TENDN, DIACHI, SDT, TENNGUOIDAIDIEN FROM DOANHNGHIEP WHERE (OWN
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(string Original_IDLOAI, string Original_TENLOAI) {
+        public virtual int Delete(string Original_IDLOAI, string Original_TENLOAI, string Original_KIEUDANG, int Original_SUCCHUA, double Original_TRONGLUONG) {
             if ((Original_IDLOAI == null)) {
                 throw new global::System.ArgumentNullException("Original_IDLOAI");
             }
@@ -15153,6 +15249,14 @@ SELECT OWNER_ID, TENDN, DIACHI, SDT, TENNGUOIDAIDIEN FROM DOANHNGHIEP WHERE (OWN
             else {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_TENLOAI));
             }
+            if ((Original_KIEUDANG == null)) {
+                throw new global::System.ArgumentNullException("Original_KIEUDANG");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_KIEUDANG));
+            }
+            this.Adapter.DeleteCommand.Parameters[3].Value = ((int)(Original_SUCCHUA));
+            this.Adapter.DeleteCommand.Parameters[4].Value = ((double)(Original_TRONGLUONG));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -15173,7 +15277,7 @@ SELECT OWNER_ID, TENDN, DIACHI, SDT, TENNGUOIDAIDIEN FROM DOANHNGHIEP WHERE (OWN
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string IDLOAI, string TENLOAI) {
+        public virtual int Insert(string IDLOAI, string TENLOAI, string KIEUDANG, int SUCCHUA, double TRONGLUONG) {
             if ((IDLOAI == null)) {
                 throw new global::System.ArgumentNullException("IDLOAI");
             }
@@ -15186,6 +15290,14 @@ SELECT OWNER_ID, TENDN, DIACHI, SDT, TENNGUOIDAIDIEN FROM DOANHNGHIEP WHERE (OWN
             else {
                 this.Adapter.InsertCommand.Parameters[1].Value = ((string)(TENLOAI));
             }
+            if ((KIEUDANG == null)) {
+                throw new global::System.ArgumentNullException("KIEUDANG");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(KIEUDANG));
+            }
+            this.Adapter.InsertCommand.Parameters[3].Value = ((int)(SUCCHUA));
+            this.Adapter.InsertCommand.Parameters[4].Value = ((double)(TRONGLUONG));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -15206,7 +15318,7 @@ SELECT OWNER_ID, TENDN, DIACHI, SDT, TENNGUOIDAIDIEN FROM DOANHNGHIEP WHERE (OWN
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string IDLOAI, string TENLOAI, string Original_IDLOAI, string Original_TENLOAI) {
+        public virtual int Update(string IDLOAI, string TENLOAI, string KIEUDANG, int SUCCHUA, double TRONGLUONG, string Original_IDLOAI, string Original_TENLOAI, string Original_KIEUDANG, int Original_SUCCHUA, double Original_TRONGLUONG) {
             if ((IDLOAI == null)) {
                 throw new global::System.ArgumentNullException("IDLOAI");
             }
@@ -15219,18 +15331,34 @@ SELECT OWNER_ID, TENDN, DIACHI, SDT, TENNGUOIDAIDIEN FROM DOANHNGHIEP WHERE (OWN
             else {
                 this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(TENLOAI));
             }
+            if ((KIEUDANG == null)) {
+                throw new global::System.ArgumentNullException("KIEUDANG");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(KIEUDANG));
+            }
+            this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(SUCCHUA));
+            this.Adapter.UpdateCommand.Parameters[4].Value = ((double)(TRONGLUONG));
             if ((Original_IDLOAI == null)) {
                 throw new global::System.ArgumentNullException("Original_IDLOAI");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Original_IDLOAI));
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(Original_IDLOAI));
             }
             if ((Original_TENLOAI == null)) {
                 throw new global::System.ArgumentNullException("Original_TENLOAI");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(Original_TENLOAI));
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Original_TENLOAI));
             }
+            if ((Original_KIEUDANG == null)) {
+                throw new global::System.ArgumentNullException("Original_KIEUDANG");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_KIEUDANG));
+            }
+            this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(Original_SUCCHUA));
+            this.Adapter.UpdateCommand.Parameters[9].Value = ((double)(Original_TRONGLUONG));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -15251,8 +15379,8 @@ SELECT OWNER_ID, TENDN, DIACHI, SDT, TENNGUOIDAIDIEN FROM DOANHNGHIEP WHERE (OWN
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string TENLOAI, string Original_IDLOAI, string Original_TENLOAI) {
-            return this.Update(Original_IDLOAI, TENLOAI, Original_IDLOAI, Original_TENLOAI);
+        public virtual int Update(string TENLOAI, string KIEUDANG, int SUCCHUA, double TRONGLUONG, string Original_IDLOAI, string Original_TENLOAI, string Original_KIEUDANG, int Original_SUCCHUA, double Original_TRONGLUONG) {
+            return this.Update(Original_IDLOAI, TENLOAI, KIEUDANG, SUCCHUA, TRONGLUONG, Original_IDLOAI, Original_TENLOAI, Original_KIEUDANG, Original_SUCCHUA, Original_TRONGLUONG);
         }
     }
     
