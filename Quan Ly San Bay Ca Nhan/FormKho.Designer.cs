@@ -41,6 +41,7 @@
             this.btnHieuChinh = new DevExpress.XtraBars.BarButtonItem();
             this.btnGhi = new DevExpress.XtraBars.BarButtonItem();
             this.btnXoa = new DevExpress.XtraBars.BarButtonItem();
+            this.btnHuy = new DevExpress.XtraBars.BarButtonItem();
             this.btnReload = new DevExpress.XtraBars.BarButtonItem();
             this.btnCTKho = new DevExpress.XtraBars.BarButtonItem();
             this.btnThoat = new DevExpress.XtraBars.BarButtonItem();
@@ -79,7 +80,6 @@
             this.btnThoatCT = new DevExpress.XtraEditors.SimpleButton();
             this.btnGhiCTKho = new DevExpress.XtraEditors.SimpleButton();
             this.txtIDMayBay = new DevExpress.XtraEditors.ButtonEdit();
-            this.btnHuy = new DevExpress.XtraBars.BarButtonItem();
             iDKHOLabel = new System.Windows.Forms.Label();
             sUCCHUALabel = new System.Windows.Forms.Label();
             vITRILabel = new System.Windows.Forms.Label();
@@ -237,6 +237,16 @@
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.btnXoa.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnXoa_ItemClick);
+            // 
+            // btnHuy
+            // 
+            this.btnHuy.Caption = "Hủy";
+            this.btnHuy.Id = 9;
+            this.btnHuy.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnHuy.ImageOptions.Image")));
+            this.btnHuy.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnHuy.ImageOptions.LargeImage")));
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.btnHuy.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnHuy_ItemClick);
             // 
             // btnReload
             // 
@@ -532,34 +542,38 @@
             this.tsmiXoa,
             this.tsmiReload});
             this.cmsCTKho.Name = "cmsCTKho";
-            this.cmsCTKho.Size = new System.Drawing.Size(226, 100);
+            this.cmsCTKho.Size = new System.Drawing.Size(281, 108);
             // 
             // tsmiThem
             // 
+            this.tsmiThem.Image = global::Quan_Ly_May_Bay.Properties.Resources.add_240px;
             this.tsmiThem.Name = "tsmiThem";
-            this.tsmiThem.Size = new System.Drawing.Size(225, 24);
-            this.tsmiThem.Text = "Thêm chi tiết kho";
+            this.tsmiThem.Size = new System.Drawing.Size(280, 26);
+            this.tsmiThem.Text = "Thêm máy bay vào kho";
             this.tsmiThem.Click += new System.EventHandler(this.tsmiThem_Click);
             // 
             // tsmiSua
             // 
+            this.tsmiSua.Image = global::Quan_Ly_May_Bay.Properties.Resources.edit_row_512px;
             this.tsmiSua.Name = "tsmiSua";
-            this.tsmiSua.Size = new System.Drawing.Size(225, 24);
-            this.tsmiSua.Text = "Hiệu chỉnh chi tiết kho";
+            this.tsmiSua.Size = new System.Drawing.Size(280, 26);
+            this.tsmiSua.Text = "Hiệu chỉnh máy bay trong kho";
             this.tsmiSua.Click += new System.EventHandler(this.tsmiSua_Click);
             // 
             // tsmiXoa
             // 
+            this.tsmiXoa.Image = global::Quan_Ly_May_Bay.Properties.Resources.remove_512px;
             this.tsmiXoa.Name = "tsmiXoa";
-            this.tsmiXoa.Size = new System.Drawing.Size(225, 24);
-            this.tsmiXoa.Text = "Xóa chi tiết kho";
+            this.tsmiXoa.Size = new System.Drawing.Size(280, 26);
+            this.tsmiXoa.Text = "Xóa máy bay khỏi kho";
             this.tsmiXoa.Click += new System.EventHandler(this.tsmiXoa_Click);
             // 
             // tsmiReload
             // 
+            this.tsmiReload.Image = global::Quan_Ly_May_Bay.Properties.Resources.synchronize_512px;
             this.tsmiReload.Name = "tsmiReload";
-            this.tsmiReload.Size = new System.Drawing.Size(225, 24);
-            this.tsmiReload.Text = "Reload chi tiết kho";
+            this.tsmiReload.Size = new System.Drawing.Size(280, 26);
+            this.tsmiReload.Text = "Reload máy bay trong kho";
             this.tsmiReload.Click += new System.EventHandler(this.tsmiReload_Click);
             // 
             // gcChucNangCT
@@ -627,16 +641,6 @@
             this.txtIDMayBay.Size = new System.Drawing.Size(170, 30);
             this.txtIDMayBay.TabIndex = 3;
             this.txtIDMayBay.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.txtIDMayBay_ButtonClick);
-            // 
-            // btnHuy
-            // 
-            this.btnHuy.Caption = "Hủy";
-            this.btnHuy.Id = 9;
-            this.btnHuy.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
-            this.btnHuy.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
-            this.btnHuy.Name = "btnHuy";
-            this.btnHuy.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            this.btnHuy.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnHuy_ItemClick);
             // 
             // FormKho
             // 

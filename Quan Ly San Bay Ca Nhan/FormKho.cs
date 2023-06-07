@@ -246,6 +246,15 @@ namespace Quan_Ly_May_Bay
                 MessageBox.Show("ID Máy bay không được bỏ trống, vui lòng chọn 1 ID Máy bay", "Thông báo", MessageBoxButtons.OK);
                 return;
             }
+            for ( int i = 0; i  < bdsCTKho.Count; i++)
+            {
+                if ( txtIDMayBay.Text == ((DataRowView)bdsCTKho[i])["IDMAYBAY"].ToString())
+                {
+                    MessageBox.Show("Máy bay này đã có trong trong kho, vui lòng chọn máy bay khác", "Thông báo", MessageBoxButtons.OK);
+                    return;
+                }
+            }
+            
 
             try
             {
