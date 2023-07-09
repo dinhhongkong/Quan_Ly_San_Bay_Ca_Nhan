@@ -25,31 +25,37 @@ namespace Quan_Ly_May_Bay
         {
             if (txtIDNhanVien.Text == "")
             {
-                MessageBox.Show("Mã nhân viên không được để trống", "", MessageBoxButtons.OK);
+                MessageBox.Show("Mã nhân viên không được để trống!", "Thông báo", MessageBoxButtons.OK);
                 return false;
             }
 
             if (txtUID.Text == "")
             {
-                MessageBox.Show("Tên đăng nhập không được để trống", "", MessageBoxButtons.OK);
+                MessageBox.Show("Tên đăng nhập không được để trống!", "Thông báo", MessageBoxButtons.OK);
                 return false;
             }
 
             if (txtPwd.Text == "")
             {
-                MessageBox.Show("Mật khẩu không được để trống", "", MessageBoxButtons.OK);
+                MessageBox.Show("Mật khẩu không được để trống!", "Thông báo", MessageBoxButtons.OK);
                 return false;
             }
 
             if (bdsDSTK.Find("MaNhanVien", txtIDNhanVien.Text) != -1)
             {
-                MessageBox.Show("Nhân viên với mã " + txtIDNhanVien.Text + " đã có tài khoản", "", MessageBoxButtons.OK);
+                MessageBox.Show("Nhân viên với mã " + txtIDNhanVien.Text + " đã có tài khoản!", "Thông báo", MessageBoxButtons.OK);
                 return false;
             }
 
             if (bdsDSTK.Find("TenDangNhap", txtUID.Text) != -1)
             {
-                MessageBox.Show("Tên đăng nhập " + txtUID.Text + " đã có trong hệ thống", "", MessageBoxButtons.OK);
+                MessageBox.Show("Tên đăng nhập " + txtUID.Text + " đã có trong hệ thống!", "Thông báo", MessageBoxButtons.OK);
+                return false;
+            }
+
+            if(bdsNhanvien.Find("IDNHANVIEN", Int32.Parse(txtIDNhanVien.Text)) == -1)
+            {
+                MessageBox.Show("Không có nhân viên nào với mã " + txtIDNhanVien.Text + " trong hệ thống!", "Thông báo", MessageBoxButtons.OK);
                 return false;
             }
 
@@ -78,6 +84,11 @@ namespace Quan_Ly_May_Bay
         private void FormTaoTaiKhoan_Load(object sender, EventArgs e)
         {
             this.DS.EnforceConstraints = false;
+
+            // TODO: This line of code loads data into the 'DS.NHANVIEN' table. You can move, or remove it, as needed.
+            this.v_DanhSachTaiKhoanTableAdapter.Connection.ConnectionString = Program.connstr;
+            this.nHANVIENTableAdapter.Fill(this.DS.NHANVIEN);
+            
             Reload();
             
             if(Program.mGroup == "NVBAOTRI")
@@ -153,14 +164,20 @@ namespace Quan_Ly_May_Bay
             int success = Program.ExecSqlNonQuery(sqlCmd);
             if (success == 0)
             {
-                MessageBox.Show("Hiệu chỉnh tài khoản thành công", "", MessageBoxButtons.OK);
+                MessageBox.Show("Hiệu chỉnh tài khoản thành công", "Thông báo", MessageBoxButtons.OK);
                 Reload();
             }
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Bạn có muốn xóa tài khoản này không ?", "OK", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            if(txtCurrIDNhanVien.Text == Program.userName)
+            {
+                MessageBox.Show("Không thể xoá tài khoản đang đăng nhập!", "Thông báo", MessageBoxButtons.OK);
+                return;
+            }
+
+            if (MessageBox.Show("Bạn có muốn xóa tài khoản này không ?", "Thông báo", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
                 string tendangnhap = txtCurrUID.Text;
                 string manv = txtCurrIDNhanVien.Text;
